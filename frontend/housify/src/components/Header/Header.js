@@ -1,35 +1,30 @@
 import React from "react";
 import logo from "../../assets/housify.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
     <div className="Header bg-black h-20 flex justify-around pt-6">
-      <img className="h-8 w-70" src={logo} />
+      <img className="h-8 w-70" src={logo} alt="logo" />
       <nav className="text-white flex justify-around ">
-        <Link className="mr-10" to="/">
+        <NavLink to="/" className={({ isActive }) => (isActive ? "text-purple-600 mr-10" : "white mr-10")}>
           Home
-        </Link>
-
-        <Link className="mr-10" to="/about">
+        </NavLink>
+        <NavLink to="/about" className={({ isActive }) => (isActive ? "text-purple-600 mr-10" : "white mr-10")}>
           About
-        </Link>
-
-        <Link className="mr-10" to="/property">
+        </NavLink>
+        <NavLink to="/property" className={({ isActive }) => (isActive ? "text-purple-600 mr-10" : "white mr-10")}>
           Property
-        </Link>
-
-        <Link className="mr-10" to="/agent">
+        </NavLink>
+        <NavLink to="/agent" className={({ isActive }) => (isActive ? "text-purple-600 mr-10" : "white mr-10")}>
           Agent
-        </Link>
-
-        <Link className="mr-10" to="/contact">
+        </NavLink>
+        <NavLink to="/contact" className={({ isActive }) => (isActive ? "text-purple-600 mr-10" : "white mr-10")}>
           Contact
-        </Link>
-
-        <Link className="mr-10" to="/blog">
+        </NavLink>
+        <NavLink to="/blog" className={({ isActive }) => (isActive ? "text-purple-600 mr-10" : "white mr-10")}>
           Blog
-        </Link>
+        </NavLink>
       </nav>
     </div>
   );
