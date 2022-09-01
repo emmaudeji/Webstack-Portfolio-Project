@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../Header/Header";
+import "./Home.css";
 
 function Home() {
   return (
@@ -10,23 +11,10 @@ function Home() {
           <h1 className="font-bold text-5xl">Find Your Next Perfect Place To Live</h1>
           <p className="text-3xl font-extralight mt-6">Let's help you find a home that is perfect for you</p>
 
-          <button class="rounded-full border-zinc-50">Abuja, NG</button>
+          <input className="btn outline-0 text-black p-5 mt-6" placeholder="Abuja, NG"></input>
         </div>
 
-        <div className="box h-200 w-200" style={{
-          width: "50%", 
-          height: "50%", 
-          border: "solid 1px", 
-          borderBottomLeftRadius: "70px", 
-          borderBottomRightRadius: "70px",
-          borderTopRightRadius: "70px",
-          marginTop: "10%",
-          padding: "10%",
-          marginRight: "10%"
-          }}></div>
-
-        <div className="box h-200 w-200"></div>
-
+        <div className="box"></div>
       </section>
       <section className="bg-black h-screen text-white">
         <div className="ml-36 pt-28">
