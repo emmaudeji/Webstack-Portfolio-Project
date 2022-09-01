@@ -1,6 +1,6 @@
 .box {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 70%;
   border: solid 1px;
   border-bottom-left-radius: 70px;
   border-bottom-right-radius: 70px;
@@ -8,11 +8,21 @@
   margin-top: 10%;
   padding: 10%;
   margin-right: 10%;
+  margin-left: 10%;
   background: white;
 }
 
-.btn {
+.input-btn {
   width: 400px;
+  height: 50px;
+  border: solid 1px;
+  border-bottom-left-radius: 70px;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+
+.btn {
+  width: 120px;
   height: 50px;
   border: solid 1px;
   border-bottom-left-radius: 70px;
