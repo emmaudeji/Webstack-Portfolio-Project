@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../Header/Header";
 import "./Home.css";
 
-
 function Home() {
   return (
     <div className="Home">
@@ -14,23 +13,8 @@ function Home() {
 
           <input className="btn outline-0 text-black p-5 mt-6" placeholder="Abuja, NG"></input>
         </div>
- 
 
         <div className="box"></div>
-
-        <div className="box h-200 w-200" style={{
-          width: "50%", 
-          height: "50%", 
-          border: "solid 1px", 
-          borderBottomLeftRadius: "70px", 
-          borderBottomRightRadius: "70px",
-          borderTopRightRadius: "70px",
-          marginTop: "10%",
-          padding: "10%",
-          marginRight: "10%",
-          marginLeft: "10%"
-          }}></div>
-
       </section>
       <section className="bg-black h-screen text-white">
         <div className="ml-36 pt-28">
