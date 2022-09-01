@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Header/Header";
 
+
 function Home() {
   return (
     <div className="Home">
@@ -12,7 +13,6 @@ function Home() {
 
           <button class="rounded-full border-zinc-50">Abuja, NG</button>
         </div>
-
         <div className="box h-200 w-200" style={{
           width: "50%", 
           height: "50%", 
@@ -22,11 +22,9 @@ function Home() {
           borderTopRightRadius: "70px",
           marginTop: "10%",
           padding: "10%",
-          marginRight: "10%"
+          marginRight: "10%",
+          marginLeft: "10%"
           }}></div>
-
-        <div className="box h-200 w-200"></div>
-
       </section>
       <section className="bg-black h-screen text-white">
         <div className="ml-36 pt-28">
