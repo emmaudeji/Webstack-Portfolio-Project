@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "../Header/Header";
 import "./Home.css";
+import ApartmentIcon from "@mui/icons-material/Apartment";
+import GroupIcon from "@mui/icons-material/Group";
 
 function Home() {
   return (
@@ -16,8 +18,8 @@ function Home() {
 
         <div className="box"></div>
       </section>
-      <section className="bg-black h-screen text-white">
-        <div className="ml-36 pt-28">
+      <section className="bg-black h-screen text-white flex">
+        <div className="ml-36 pt-28 w-1/2 pr-28">
           <h3 className="text-purple-700 text-2xl">About Us</h3>
           <h2 className="font-bold mt-6 text-4xl">We Provide The Best Property For You</h2>
           <p className="text-2xl font-extralight mt-4">
@@ -26,7 +28,19 @@ function Home() {
           </p>
           <button className="btn bg-purple-700 text-black mt-5">Learn More</button>
         </div>
-        <div></div>
+        <div className="pt-40 pl-16 ">
+          <ApartmentIcon></ApartmentIcon> <h3 className="text-white">Buy Property</h3>
+          <p>With our vast search tool, you can find your dream home from anywhere in the world.</p>
+          <ApartmentIcon></ApartmentIcon>
+          <h3>Sell Property</h3>
+          <p>With our vast search tool, you can find your dream home from anywhere in the world.</p>
+          <ApartmentIcon></ApartmentIcon>
+          <h3>Rent Property</h3>
+          <p>With our vast search tool, you can find your dream home from anywhere in the world.</p>
+          <GroupIcon></GroupIcon>
+          <h3>Property Agent</h3>
+          <p>With our vast search tool, you can find your dream home from anywhere in the world.</p>
+        </div>
       </section>
     </div>
   );
