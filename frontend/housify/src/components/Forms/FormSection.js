@@ -32,78 +32,165 @@ const Form = (props) => {
   };
 
   return (
-    <div className="w-full  mx-auto py-20 px-10 flex-col justify-between text-center md:flex-row bg-zinc-800 my-10">
+    <div className="w-full  mx-auto py-20 px-10  justify-between text-center  bg-zinc-800 my-10">
       {/* testing form */}
-      <div className="p-6 mx-auto my-auto">
-        <h4>
+      {/* <h4>
           Hello {inputs.firstName} {inputs.lastName}
         </h4>
-        <p>{inputs.email}</p>
-      </div>
+        <p>{inputs.email}</p> */}
 
-      <div className="md:mx-[500px] text-xl text-left ">
-        <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
+        <div className=" md:mx-[100px] md:grid grid-cols-2 gap-10  text-xl text-left pb-10">
           <div>
-            <div className="">
-              <div className="w-full">
-                <label className="block mb-2">First Name</label>
-                <input
-                  className="mb-6 w-full rounded-md text-black bg-zinc-300 focus:outline-none p-2 hover:bg-zinc-50 duration-300"
-                  type="text"
-                  name="firstName"
-                  onChange={handleInputChange}
-                  value={inputs.firstName}
-                  required
-                />
-              </div>
-              <div className="w-full">
-                <label className="block mb-2">Last Name</label>
-                <input
-                  className="mb-6 w-full rounded-md text-black bg-zinc-300 focus:outline-none p-2 hover:bg-zinc-50 duration-300"
-                  type="text"
-                  name="lastName"
-                  onChange={handleInputChange}
-                  value={inputs.lastName}
-                  required
-                />
-              </div>
+            <h2 className="font-thin text-left pb-4 text-5xl">
+              Personal Details
+            </h2>
+            <div>
+              <label className="">Full Name</label>
+              <input
+                className="formInput"
+                type="text"
+                name="name"
+                onChange={handleInputChange}
+                value={inputs.name}
+                placeholder="Enter full name"
+                required
+              />
+            </div>
+            <div>
+              <label>Email Address</label>
+              <input
+                className="formInput"
+                type="email"
+                name="email"
+                onChange={handleInputChange}
+                value={inputs.email}
+                placeholder="email@email.com"
+                required
+              />
+            </div>
+            <div>
+              <label>Address</label>
+              <input
+                className="formInput"
+                type="text"
+                name="address"
+                onChange={handleInputChange}
+                placeholder="Enter your address"
+                value={inputs.address}
+                required
+              />
+            </div>
+            <div>
+              <label>City</label>
+              <input
+                className="formInput"
+                type="text"
+                name="city"
+                onChange={handleInputChange}
+                placeholder="Enter yout city"
+                value={inputs.city}
+              />
+            </div>
+            <div>
+              <label>Country</label>
+              <input
+                className="formInput"
+                type="text"
+                name="country"
+                onChange={handleInputChange}
+                placeholder="Enter country of residence"
+                value={inputs.country}
+                required
+              />
+            </div>
+            <div>
+              <label>Phone Number</label>
+              <input
+                className="formInput"
+                type="number"
+                name="phoneNumber"
+                onChange={handleInputChange}
+                placeholder="Enter Phone number"
+                value={inputs.phoneNumber}
+                required
+              />
             </div>
           </div>
+
           <div>
-            <label>Email Address</label>
-            <input
-              className="mb-6 w-full rounded-md text-black bg-zinc-300 focus:outline-none p-2 hover:bg-zinc-50 duration-300"
-              type="email"
-              name="email"
-              onChange={handleInputChange}
-              value={inputs.email}
-              required
-            />
+            <h2 className="font-thin text-left pb-4 text-5xl">
+              Professional Details
+            </h2>
+            <div>
+              <label>Bio: State Your Professional Summary</label>
+              <input
+                className="formInput min-h-[220px]"
+                type="textarea"
+                name="bio"
+                onChange={handleInputChange}
+                placeholder=""
+                value={inputs.bio}
+                required
+              />
+            </div>
+            <div>
+              <label>LinkedIn Address</label>
+              <input
+                className="formInput"
+                type="text"
+                name="linkedin"
+                onChange={handleInputChange}
+                placeholder="Enter Linkedin address"
+                value={inputs.linkedin}
+                required
+              />
+            </div>
+            <div>
+              <label>Twitter Address</label>
+              <input
+                className="formInput"
+                type="text"
+                name="twitter"
+                onChange={handleInputChange}
+                placeholder="Enter Twitter address"
+                value={inputs.twitter}
+              />
+            </div>
+            <div>
+              <label>Whatsapp number</label>
+              <input
+                className="formInput"
+                type="number"
+                name="twitter"
+                onChange={handleInputChange}
+                placeholder="Enter Whatsapp number"
+                value={inputs.whatsapp}
+              />
+            </div>
           </div>
-          <div>
-            <label>Password</label>
-            <input
-              className="mb-6 w-full rounded-md text-black bg-zinc-300 focus:outline-none p-2 hover:bg-zinc-50 duration-300"
-              type="password"
-              name="password1"
-              onChange={handleInputChange}
-              value={inputs.password1}
-            />
-          </div>
-          <div>
-            <label>Re-enter Password</label>
-            <input
-              className="mb-6 w-full rounded-md text-black bg-zinc-300 focus:outline-none p-2 hover:bg-zinc-50 duration-300"
-              type="password"
-              name="password2"
-              onChange={handleInputChange}
-              value={inputs.password2}
-            />
-          </div>
-          <button type="submit button ">Submit</button>
-        </form>
-      </div>
+        </div>
+
+        <div className="mx-auto text-center text-2xl">
+          <button type="submit button" className="px-14 py-6">
+            Submit
+          </button>
+        </div>
+      </form>
     </div>
+
+    // // First Name
+    // Surname
+    // Address
+    // City
+    // State
+    // Country
+    // Zip code
+    // Phone Number
+    // LinkedIn
+    // Tweeter
+    // Email
+    // Whatapp
   );
 };
 

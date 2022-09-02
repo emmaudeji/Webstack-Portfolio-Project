@@ -17,6 +17,9 @@ body {
   @apply bg-zinc-900 text-zinc-100
 }
 
+.container {
+  @apply max-w-[1440px] mx-auto py-20 px-10 text-center
+}
 h1 {
   @apply text-6xl font-extrabold
 }
@@ -34,7 +37,7 @@ h4 {
 }
 
 h5 {
-  @apply text-xl font-bold
+  @apply text-xl font-semibold
 }
 
 button,
@@ -45,6 +48,16 @@ button,
 .navlink {
   @apply hover:text-purple-500 hover:scale-105 duration-300
 }
+
+.formLabel {
+  @apply block
+}
+
+.formInput {
+  @apply mb-4 w-full rounded-sm text-black bg-zinc-300 focus:outline-none p-2 hover:bg-zinc-50 duration-300
+}
+
+
 
 body {
   margin: 0;

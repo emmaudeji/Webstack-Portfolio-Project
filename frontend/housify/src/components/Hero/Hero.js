@@ -7,8 +7,8 @@ const Hero = (props) => {
         <div className="md:grid text-center md:text-left grid-cols-2 gap-10">
           {/* Header Text */}
           <div className="my-10 md:my-auto">
-            <h1 className="pb-8 text-4xl md:text-6xl">{props.header}</h1>
-            <p>{props.text}</p>
+            <h1 className="pb-4 text-4xl md:text-6xl">{props.header}</h1>
+            <h5>{props.text}</h5>
           </div>
 
           {/* HeroImageBox component */}
