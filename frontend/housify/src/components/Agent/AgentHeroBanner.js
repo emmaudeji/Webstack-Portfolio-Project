@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import UiFace from "../../assets/47.jpg";
-import AiFillEnvironment from "react-icons/ai";
 
 const AgentHeroBanner = (props) => {
   return (
@@ -11,19 +10,23 @@ const AgentHeroBanner = (props) => {
           <div className="my-10 md:my-auto">
             <h1 className="pb-4 text-4xl md:text-6xl">{props.header}</h1>
             <h5>{props.text}</h5>
-            <div className="md:flex flex-col justify-between w-full p-6">
-              <div className="text-left ">
-                <h5>Location</h5>
-                <div className="flex">
-                  <div className="  rounded-full mt-2 w-10 h-10 bg-zinc-300"></div>
-                  <p>7 MCC Avenue, Boston, Canada</p>
-                </div>
-                <div className="flex align-middle">
-                  <AiFillEnvironment />
-                  <p className="pt-4">7 MCC Avenue, Boston, Canada</p>
-                </div>
+            <div className="md:grid grid-cols-2 justify-between w-full pt-6 text-left ">
+              <div>
+                <h5 className="inline-block mr-4">address</h5>
+                <p>7 MCC Avenue, Boston, Canada</p>
+                <h5 className="inline-block mr-4">phonenumber</h5>
+                <p>+234-890-2033-333</p>
+                <h5 className="inline-block mr-4">email</h5>
+                <p>zelipha@email.com</p>
               </div>
-              <div></div>
+              <div className="">
+                <h5 className="inline-block mr-4">linkedin</h5>
+                <p>https://linkedin.com/in/zelipha</p>
+                <h5 className="inline-block mr-4">twitter</h5>
+                <p>@zelipha</p>
+                <h5 className="inline-block mr-4">Instagram</h5>
+                <p>@zelipha_properties</p>
+              </div>
             </div>
           </div>
 
@@ -41,19 +44,6 @@ const AgentHeroBanner = (props) => {
             </div>
           </div>
         </div>
-
-        {/* search block component */}
-        {/* <div className="seachProperty">
-          <div className="flex flex row mx-auto my-10">
-            <input>
-              <select>
-                <option>
-
-                </option>
-              </select>
-            </input>
-          </div>
-        </div> */}
       </div>
     </div>
   );
