@@ -1,10 +1,12 @@
 import React from "react";
-import Header from "../Header/Header";
+import Navbar from "../Header/Navbar";
+import Hero from "../Hero/Hero";
 
 function Property() {
   return (
     <div className="Property">
-      <Header />
+      <Navbar />
+      <Hero />
     </div>
   );
 }
