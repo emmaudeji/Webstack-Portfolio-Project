@@ -32,7 +32,7 @@ const Form = (props) => {
   };
 
   return (
-    <div className="max-w-[1440px] mx-auto py-20 px-10 flex-col justify-between text-center md:flex-row bg-zinc-800 my-10">
+    <div className="w-full  mx-auto py-20 px-10 flex-col justify-between text-center md:flex-row bg-zinc-800 my-10">
       {/* testing form */}
       <div className="p-6 mx-auto my-auto">
         <h4>
@@ -41,11 +41,11 @@ const Form = (props) => {
         <p>{inputs.email}</p>
       </div>
 
-      <div className="text-xl text-left ">
+      <div className="md:mx-[500px] text-xl text-left ">
         <form onSubmit={handleSubmit}>
           <div>
-            <div className="md:flex gap-6">
-              <div className="">
+            <div className="">
+              <div className="w-full">
                 <label className="block mb-2">First Name</label>
                 <input
                   className="mb-6 w-full rounded-md text-black bg-zinc-300 focus:outline-none p-2 hover:bg-zinc-50 duration-300"
@@ -56,7 +56,7 @@ const Form = (props) => {
                   required
                 />
               </div>
-              <div className="">
+              <div className="w-full">
                 <label className="block mb-2">Last Name</label>
                 <input
                   className="mb-6 w-full rounded-md text-black bg-zinc-300 focus:outline-none p-2 hover:bg-zinc-50 duration-300"

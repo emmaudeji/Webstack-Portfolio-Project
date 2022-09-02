@@ -12,7 +12,7 @@ const HeroImageBox = () => {
         />
       </div>
       <div className="absolute top-[75%]">
-        <p className="button text-xl p-5">Texas</p>
+        <p className="button text-xl p-5">Texas ChampHouse Uk</p>
       </div>
     </div>
   );
