@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 
-const LoginForm = (props) => {
+const SignupForm = (props) => {
   // implementing state and hooks
 
   const [inputs, setInputs] = useState({
@@ -33,7 +33,7 @@ const LoginForm = (props) => {
     <div className="Property">
       <Header />
       <div className="w-full mx-auto p-10 text-center">
-        <h2 className="pb-4">Login For The Best of Experience?</h2>
+        <h2 className="pb-4">SignUp For The Best of Experience?</h2>
       </div>
       <div className="w-full  mx-auto py-20 px-10  justify-between text-center  bg-zinc-800 my-10">
         {/* testing form */}
@@ -87,4 +87,4 @@ const LoginForm = (props) => {
   );
 };
 
-export default LoginForm;
+export default SignupForm;
