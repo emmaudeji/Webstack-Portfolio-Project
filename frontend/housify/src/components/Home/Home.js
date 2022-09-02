@@ -8,7 +8,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import HeroImageBox from "../utils/HeroImageBox";
 import "./Home.css";
 
-function Home(props) {
+function Home() {
   return (
     <div className="Home">
       <Header />
@@ -23,7 +23,6 @@ function Home(props) {
                 <SearchIcon className=" absolute " />
               </form>
             </div>
-
             <HeroImageBox p="Featured Homes" />
           </div>
         </div>
@@ -43,35 +42,37 @@ function Home(props) {
           <div id="left">
             <ApartmentIcon></ApartmentIcon>
             <h3 className="text-white">Buy Property</h3>
-
             <p>With our vast search tool, you can find your dream home from anywhere in the world.</p>
           </div>
+
           <div id="right">
             <ApartmentIcon></ApartmentIcon>
             <h3>Sell Property</h3>
             <p>With our vast search tool, you can find your dream home from anywhere in the world.</p>
           </div>
+
           <div id="left">
             <ApartmentIcon></ApartmentIcon>
             <h3>Rent Property</h3>
-
             <p>With our vast search tool, you can find your dream home from anywhere in the world.</p>
           </div>
+
           <div id="right">
             <GroupIcon></GroupIcon>
             <h3>Property Agent</h3>
-
             <p>With our vast search tool, you can find your dream home from anywhere in the world.</p>
           </div>
         </div>
       </section>
 
       {/*Featured Properties */}
+      <FeaturedProperty />
 
       <section className="bg-black h-screen text-white">
         <div className="text-center pt-2">
           <h3 className="text-purple-700 text-2xl">Featured Properties</h3>
           <p>Check out the top rated properties around the world.</p>
+
           <FeaturedProperty />
           <FeaturedProperty />
         </div>

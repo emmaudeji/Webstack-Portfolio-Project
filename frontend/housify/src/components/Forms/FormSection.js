@@ -14,10 +14,10 @@ const Form = (props) => {
       event.preventDefault();
 
       alert(`User Created!
-        Name: ${inputs.firstName} ${inputs.lastName}
-        Email: ${inputs.email}
-        
-        Thank you for registering`);
+         Name: ${inputs.firstName} ${inputs.lastName}
+         Email: ${inputs.email}
+         
+         Thank you for registering`);
     }
   };
 

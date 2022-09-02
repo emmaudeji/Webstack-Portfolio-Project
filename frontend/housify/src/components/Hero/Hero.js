@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import HeroImageBox from "../utils/HeroImageBox";
 
 const Hero = (props) => {
@@ -12,8 +13,21 @@ const Hero = (props) => {
           </div>
 
           {/* HeroImageBox component */}
-          <HeroImageBox p="Texas ChampHouse UK" />
+          <HeroImageBox />
         </div>
+
+        {/* search block component */}
+        {/* <div className="seachProperty">
+          <div className="flex flex row mx-auto my-10">
+            <input>
+              <select>
+                <option>
+
+                </option>
+              </select>
+            </input>
+          </div>
+        </div> */}
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ function Header() {
     <div className="Header bg-zinc-900 w-full">
       <div className="max-w-[1440px] mx-auto py-6 px-10 flex justify-between">
         <div>
-          <img className="h-8 w-70 ml-16" src={logo} alt="Housify-logo" />
+          <img className="h-8 w-70" src={logo} />
         </div>
         <div className="hidden md:flex">
           <nav className="flex items-center">
@@ -58,16 +58,16 @@ function Header() {
             <NavLink to="/about" className={({ isActive }) => (isActive ? "text-purple-600 mr-6" : "block p-3 text-xl navlink")}>
               About
             </NavLink>
-            <NavLink to="/property" className={({ isActive }) => (isActive ? "text-purple-600 mr-6" : "block p-3 text-xl navlink")}>
+            <NavLink to="/property" className={({ isActive }) => (isActive ? "text-purple-600" : "block p-3 text-xl navlink")}>
               Property
             </NavLink>
             <NavLink to="/agent" className={({ isActive }) => (isActive ? "text-purple-600 mr-6" : "block p-3 text-xl navlink")}>
               Agent
             </NavLink>
-            <NavLink to="/contact" className={({ isActive }) => (isActive ? "text-purple- mr-6" : "block p-3 text-xl navlink")}>
+            <NavLink to="/contact" className={({ isActive }) => (isActive ? "text-purple-600" : "block p-3 text-xl navlink")}>
               Contact
             </NavLink>
-            <NavLink to="/blog" className={({ isActive }) => (isActive ? "text-purple-600 mr-6" : "block p-3 text-xl navlink")}>
+            <NavLink to="/blog" className={({ isActive }) => (isActive ? "text-purple-600" : "block p-3 text-xl navlink")}>
               Blog
             </NavLink>
 
