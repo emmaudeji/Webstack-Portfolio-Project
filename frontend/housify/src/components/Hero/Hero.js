@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HeroImageBox from "../utils/HeroImageBox";
+import SearchButton from "../utils/SearchButton";
 
 const Hero = (props) => {
   return (
@@ -10,6 +11,8 @@ const Hero = (props) => {
           <div className="my-10 md:my-auto">
             <h1 className="pb-4 text-4xl md:text-6xl">{props.header}</h1>
             <h5>{props.text}</h5>
+
+            <SearchButton />
           </div>
 
           {/* HeroImageBox component */}
