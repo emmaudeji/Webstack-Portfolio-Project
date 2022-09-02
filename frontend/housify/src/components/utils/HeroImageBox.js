@@ -5,7 +5,7 @@ const HeroImageBox = (props) => {
   return (
     <div className="my-auto relative pt-12">
       <div className="img-wrap overflow-hidden bg-zinc-700 rounded-[100px] rounded-tr-none w-[90%] md:ml-auto relative">
-        <img className="w-full h-[70vh] object-cover" src={House} alt="featured image" />
+        <img className="w-full h-[80vh] object-cover" src={House} alt="featured image" />
       </div>
       <div className="absolute top-[75%]">
         <p className="button text-xl p-5">{props.p}</p>

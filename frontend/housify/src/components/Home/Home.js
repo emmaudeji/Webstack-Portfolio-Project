@@ -7,6 +7,7 @@ import Footer from "../Footer/Footer";
 import HeroImageBox from "../utils/HeroImageBox";
 import "./Home.css";
 import SearchButton from "../utils/SearchButton";
+import MoreProperty from "../Property/MoreProperty";
 
 function Home() {
   return (
@@ -15,9 +16,9 @@ function Home() {
       <section className="ml-16 h-screen mr-16">
         <div className="max-w-[1440px] mx-auto py-5 px-10  md:flex justify-between">
           <div className="md:grid text-center md:text-left grid-cols-2 gap-10">
-            <div className="my-10 pt- md:my-auto">
+            <div className="my-10  md:my-auto">
               <h1 className="pb-8 text-4xl md:text-6xl">Find Your Next Perfect Place To Live</h1>
-              <p className="text-xl mb-16">Let's help you find a home that is perfect for you</p>
+              <p className="text-xl mb-10">Let's help you find a home that is perfect for you</p>
               <SearchButton />
             </div>
             <HeroImageBox p="Featured Homes" />
@@ -62,16 +63,12 @@ function Home() {
         </div>
       </section>
 
-      {/*Featured Properties */}
-      <FeaturedProperty />
-
       <section className="bg-black h-screen text-white">
         <div className="text-center pt-2">
           <h3 className="text-purple-700 text-2xl">Featured Properties</h3>
           <p>Check out the top rated properties around the world.</p>
 
-          <FeaturedProperty />
-          <FeaturedProperty />
+          <MoreProperty />
         </div>
       </section>
       <section className="bg-black h-screen text-white">
