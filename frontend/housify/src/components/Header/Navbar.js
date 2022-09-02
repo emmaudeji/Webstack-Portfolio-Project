@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import logo from "../../assets/housify.png";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import Button from "../utils/Button";
 
 function Header() {
   const [nav, setNav] = useState(false);
@@ -40,14 +39,17 @@ function Header() {
             </Link>
             <button className="">
               <Link className="" to="/UserForm">
-                label="Get Started"
+                "Get Started"
               </Link>
             </button>
           </nav>
         </div>
 
         {/* Hamburger menu */}
-        <div onClick={handleNav} className="block md:hidden mr-0">
+        <div
+          onClick={handleNav}
+          className="block md:hidden mr-0 p-2 rounded-2xl hover:bg-purple-700 duration-300"
+        >
           {nav ? (
             <AiOutlineClose size={30} className="" />
           ) : (
@@ -59,11 +61,11 @@ function Header() {
         <div
           className={
             nav
-              ? "w-full left-0 flex justify-center text-center bg-zinc-900 top-[80px] absolute"
+              ? "w-full left-0 flex justify-center text-center bg-zinc-900 top-[80px] absolute z-10"
               : "absolute left-[-100%]"
           }
         >
-          <nav className="mb-4">
+          <nav className="pb-8">
             <Link className="block p-3 text-xl" to="/">
               Home
             </Link>
