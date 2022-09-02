@@ -49,6 +49,16 @@ button,
   @apply hover:text-purple-500 hover:scale-105 duration-300
 }
 
+.formLabel {
+  @apply block
+}
+
+.formInput {
+  @apply mb-4 w-full rounded-sm text-black bg-zinc-300 focus:outline-none p-2 hover:bg-zinc-50 duration-300
+}
+
+
+
 body {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;

@@ -8,10 +8,16 @@ function RegisterAgent() {
   return (
     <div className="Property">
       <Navbar />
-      <Hero
-        header="Do You Have What It Takes To Consult For Property Management Services?"
-        text="Register with your license and build your Career in real estate agency."
-      />
+
+      <div className="w-full mx-auto p-10 text-center">
+        <h2 className="pb-4">
+          Do you have what it takes to consult for property management?
+        </h2>
+        <h5>
+          Register with your license and let's support you to build your career.
+        </h5>
+      </div>
+
       <Form />
       <FooterEM />
     </div>
