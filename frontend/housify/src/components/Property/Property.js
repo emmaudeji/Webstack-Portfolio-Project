@@ -9,7 +9,7 @@ function Property() {
   return (
     <div className="Property">
       <Navbar />
-      <Hero />
+      <Hero header="Discover More suitable properties across the world" />
       <FeaturedProperty />
       <MoreProperty />
       <FooterEM />

@@ -1,18 +1,15 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import HeroImageBox from "../utils/HeroImageBox";
 
-const Hero = () => {
+const Hero = (props) => {
   return (
     <div className="w-full">
       <div className="max-w-[1440px] mx-auto py-5 px-10  md:flex justify-between">
         <div className="md:grid text-center md:text-left grid-cols-2 gap-10">
           {/* Header Text */}
           <div className="my-10 md:my-auto">
-            <h1 className="pb-8 text-4xl md:text-6xl">
-              Discover More suitable properties across the world
-            </h1>
+            <h1 className="pb-8 text-4xl md:text-6xl">{props.header}</h1>
+            <p>{props.text}</p>
           </div>
 
           {/* HeroImageBox component */}

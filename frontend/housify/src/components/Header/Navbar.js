@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/housify.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 function Header() {
@@ -17,30 +17,59 @@ function Header() {
         </div>
         <div className="hidden md:flex">
           <nav className="flex items-center">
-            <Link className="mr-6" to="/">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "text-purple-600" : "mr-6 navlink"
+              }
+            >
               Home
-            </Link>
-            <Link className="mr-6" to="/about">
+            </NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "text-purple-600" : "mr-6 navlink"
+              }
+            >
               About
-            </Link>
-            <Link className="mr-6" to="/property">
+            </NavLink>
+            <NavLink
+              to="/property"
+              className={({ isActive }) =>
+                isActive ? "text-purple-600" : "mr-6 navlink"
+              }
+            >
               Property
-            </Link>
-            <Link className="mr-6" to="/agent">
+            </NavLink>
+            <NavLink
+              to="/agent"
+              className={({ isActive }) =>
+                isActive ? "text-purple-600" : "mr-6 navlink"
+              }
+            >
               Agent
-            </Link>
-
-            <Link className="mr-6" to="/contact">
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? "text-purple-600" : "mr-6 navlink"
+              }
+            >
               Contact
-            </Link>
-
-            <Link className="mr-6" to="/blog">
+            </NavLink>
+            <NavLink
+              to="/blog"
+              className={({ isActive }) =>
+                isActive ? "text-purple-600" : "mr-6 navlink"
+              }
+            >
               Blog
-            </Link>
+            </NavLink>
+
             <button className="">
-              <Link className="" to="/UserForm">
+              <NavLink className="" to="/UserForm">
                 "Get Started"
-              </Link>
+              </NavLink>
             </button>
           </nav>
         </div>
@@ -66,25 +95,60 @@ function Header() {
           }
         >
           <nav className="pb-8">
-            <Link className="block p-3 text-xl" to="/">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "text-purple-600" : "block p-3 text-xl navlink"
+              }
+            >
               Home
-            </Link>
-            <Link className="block p-3 text-xl" to="/about">
+            </NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "text-purple-600" : "block p-3 text-xl navlink"
+              }
+            >
               About
-            </Link>
-            <Link className="block p-3 text-xl" to="/property">
+            </NavLink>
+            <NavLink
+              to="/property"
+              className={({ isActive }) =>
+                isActive ? "text-purple-600" : "block p-3 text-xl navlink"
+              }
+            >
               Property
-            </Link>
-            <Link className="block p-3 text-xl" to="/agent">
+            </NavLink>
+            <NavLink
+              to="/agent"
+              className={({ isActive }) =>
+                isActive ? "text-purple-600" : "block p-3 text-xl navlink"
+              }
+            >
               Agent
-            </Link>
-            <Link className="block p-3 text-xl" to="/contact">
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? "text-purple-600" : "block p-3 text-xl navlink"
+              }
+            >
               Contact
-            </Link>
-            <Link className="block p-3 text-xl" to="/blog">
+            </NavLink>
+            <NavLink
+              to="/blog"
+              className={({ isActive }) =>
+                isActive ? "text-purple-600" : "block p-3 text-xl navlink"
+              }
+            >
               Blog
-            </Link>
-            <button className="block m-4">Get Started</button>
+            </NavLink>
+
+            <button className="block m-4 ">
+              <NavLink className="" to="/UserForm">
+                "Get Started"
+              </NavLink>
+            </button>
           </nav>
         </div>
       </div>
