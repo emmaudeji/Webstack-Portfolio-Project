@@ -1,0 +1,67 @@
+.box {
+  width: 40%;
+  height: 70%;
+  border: solid 1px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  border-top-right-radius: 70px;
+  margin-top: 10%;
+  padding: 10%;
+  margin-right: 10%;
+  margin-left: 10%;
+  background: white;
+}
+.box1 {
+  width: 40%;
+  height: 50%;
+  border: solid 1px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  border-top-right-radius: 70px;
+  margin-top: 10%;
+  padding: 10%;
+  /*margin-right: 10%;*/
+  margin-left: 5%;
+  background: white;
+}
+
+.input-btn {
+  width: 400px;
+  height: 50px;
+  border: solid 1px;
+  border-bottom-left-radius: 70px;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  border: solid 1px;
+  border-bottom-left-radius: 70px;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+.Btn {
+  margin-top: 30%;
+  margin-left: -12%;
+  margin-right: 10%;
+  width: 28%;
+  height: 8%;
+  border-bottom-left-radius: 70px;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+
+#right{
+  width: 50%;
+  height: inherit;
+  float: right;
+  margin-top: 2rem;
+}
+#left{
+  width: 50%;
+  height: inherit;
+  float: left;
+  margin-top: 2rem;
+}
