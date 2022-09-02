@@ -5,26 +5,30 @@ import ApartmentIcon from "@mui/icons-material/Apartment";
 import GroupIcon from "@mui/icons-material/Group";
 import Footer from "../Footer/Footer";
 import SearchIcon from "@mui/icons-material/Search";
+import HeroImageBox from "../utils/HeroImageBox";
 
-function Home() {
+function Home(props) {
   return (
     <div className="Home">
       <Header />
-      <section className="bg-zinc-900 h-screen text-white flex">
-        <div className="leading-10 ml-36 mt-36">
-          <h1 className="font-bold text-5xl">Find Your Next Perfect Place To Live</h1>
-          <p className="text-3xl font-extralight mt-6">Let's help you find a home that is perfect for you</p>
+      <section className="ml-16 h-screen mr-16">
+        <div className="max-w-[1440px] mx-auto py-5 px-10  md:flex justify-between">
+          <div className="md:grid text-center md:text-left grid-cols-2 gap-10">
+            <div className="my-10 pt- md:my-auto">
+              <h1 className="pb-8 text-4xl md:text-6xl">Find Your Next Perfect Place To Live</h1>
+              <p className="text-xl">Let's help you find a home that is perfect for you</p>
+              <form className="relative">
+                <input className="input-btn outline-0 text-black p-5 mt-12 " placeholder="Abuja, NG"></input>
+                <SearchIcon className=" absolute " />
+              </form>
+            </div>
 
-          <form className="relative">
-            <input className="input-btn outline-0 text-black p-5 mt-6 " placeholder="Abuja, NG"></input>
-            <SearchIcon className=" absolute pr-5" />
-          </form>
+            <HeroImageBox p="Featured Homes" />
+          </div>
         </div>
-
-        <div className="box"></div>
       </section>
       <section className="bg-black h-screen text-white flex">
-        <div className="ml-36 pt-28 pr-28" >
+        <div className="ml-36 pt-28 pr-28">
           <h3 className="text-purple-700 text-2xl">About Us</h3>
           <h2 className="font-bold mt-6 text-4xl">We Provide The Best Property For You</h2>
           <p className="text-2xl font-extralight mt-4">
@@ -35,29 +39,28 @@ function Home() {
         </div>
         <div className="pt-40 pl-16 ">
           <div id="left">
-          <ApartmentIcon></ApartmentIcon> 
-          <h3 className="text-white">Buy Property</h3>
-          <p>With our vast search tool, you can find your dream home from anywhere in the world.</p>
+            <ApartmentIcon></ApartmentIcon>
+            <h3 className="text-white">Buy Property</h3>
+            <p>With our vast search tool, you can find your dream home from anywhere in the world.</p>
           </div>
 
           <div id="right">
-          <ApartmentIcon></ApartmentIcon>
-          <h3>Sell Property</h3>
-          <p>With our vast search tool, you can find your dream home from anywhere in the world.</p>
+            <ApartmentIcon></ApartmentIcon>
+            <h3>Sell Property</h3>
+            <p>With our vast search tool, you can find your dream home from anywhere in the world.</p>
           </div>
 
           <div id="left">
-          <ApartmentIcon></ApartmentIcon>
-          <h3>Rent Property</h3>
-          <p>With our vast search tool, you can find your dream home from anywhere in the world.</p>
+            <ApartmentIcon></ApartmentIcon>
+            <h3>Rent Property</h3>
+            <p>With our vast search tool, you can find your dream home from anywhere in the world.</p>
           </div>
 
           <div id="right">
-          <GroupIcon></GroupIcon>
-          <h3>Property Agent</h3>
-          <p>With our vast search tool, you can find your dream home from anywhere in the world.</p>
+            <GroupIcon></GroupIcon>
+            <h3>Property Agent</h3>
+            <p>With our vast search tool, you can find your dream home from anywhere in the world.</p>
           </div>
-          
         </div>
       </section>
       <section className="bg-black h-screen text-white">

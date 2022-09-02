@@ -1,18 +1,18 @@
 import React from "react";
-import Navbar from "../Header/Navbar";
+import Header from "../Header/Header";
 import Hero from "../Hero/Hero";
 import FeaturedProperty from "../Property/FeaturedProperty";
 import MoreProperty from "./MoreProperty";
-import FooterEM from "../Footer/FooterEM";
+import Footer from "../Footer/Footer";
 
 function Property() {
   return (
     <div className="Property">
-      <Navbar />
+      <Header />
       <Hero header="Discover More suitable properties across the world" />
       <FeaturedProperty />
       <MoreProperty />
-      <FooterEM />
+      <Footer />
     </div>
   );
 }

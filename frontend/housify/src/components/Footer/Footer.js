@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../assets/housify.png";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -13,7 +13,7 @@ function Footer() {
           <p className="py-6 text-xl">Receive Updates, discount rates, expert services, payment details, tutorials sent direct to your inbox.</p>
           <div>
             <form className="relative" method="Post" action="">
-              <input type={"email"} value={""} className="email rounded-full py-4 px-6 w-full text-black outline-0" placeholder="Enter email" />
+              <input type={"email"} value={""} className="email rounded-full py-4 px-6 w-full text-black" placeholder="Enter email" />
               <button className="absolute right-0 rounded-full py-4 px-6 bg-pink-700 hover:bg-purple-700">Subscribe</button>
             </form>
           </div>
@@ -46,21 +46,24 @@ function Footer() {
         <div className=" col-span-1 md:ml-20">
           <h3>Links</h3>
           <div className="py-4 text-xl">
-            <Link className="block " to="/">
+            <NavLink to="/" className={({ isActive }) => (isActive ? "text-2xl" : "block hover:scale-110 duration-300 p-3")}>
               Home
-            </Link>
-            <Link className="pt-4  block" to="/about">
+            </NavLink>
+            <NavLink to="/about" className={({ isActive }) => (isActive ? "text-2xl" : "block hover:scale-110 duration-300 p-3")}>
               About
-            </Link>
-            <Link className="pt-4 block" to="/property">
+            </NavLink>
+            <NavLink to="/property" className={({ isActive }) => (isActive ? "text-2xl" : "block hover:scale-110 duration-300 p-3")}>
               Property
-            </Link>
-            <Link className="pt-4 block" to="/agent">
+            </NavLink>
+            <NavLink to="/agent" className={({ isActive }) => (isActive ? "text-2xl" : "block hover:scale-110 duration-300 p-3")}>
               Agent
-            </Link>
-            <Link className="pt-4 block" to="/contact">
+            </NavLink>
+            <NavLink to="/contact" className={({ isActive }) => (isActive ? "text-2xl" : "block hover:scale-110 duration-300  p-3")}>
               Contact
-            </Link>
+            </NavLink>
+            <NavLink to="/blog" className={({ isActive }) => (isActive ? "text-2xl" : "block hover:scale-110 duration-300  p-3")}>
+              Blog
+            </NavLink>
           </div>
         </div>
 
