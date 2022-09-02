@@ -1,9 +1,4 @@
 import React from "react";
-<<<<<<< Updated upstream
-
-function About() {
-  return <div className=" About"></div>;
-=======
 import Header from "../Header/Header";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import GroupIcon from "@mui/icons-material/Group";
@@ -53,7 +48,7 @@ function About() {
         </div>
       </section>
       <section className="bg-Zinc-900 h-screen">
-        <button className="largeBtn" >
+        <button className="largeBtn">
 
         </button>
 
@@ -61,7 +56,6 @@ function About() {
       
   </div>
   );
->>>>>>> Stashed changes
 }
 
 export default About;
