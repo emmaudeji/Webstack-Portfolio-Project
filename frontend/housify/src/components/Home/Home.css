@@ -1,28 +1,5 @@
-.box {
-  width: 40%;
-  height: 70%;
-  border: solid 1px;
-  border-bottom-left-radius: 70px;
-  border-bottom-right-radius: 70px;
-  border-top-right-radius: 70px;
-  margin-top: 10%;
-  padding: 10%;
-  margin-right: 10%;
-  margin-left: 10%;
-  background: white;
-}
-
-.input-btn {
-  width: 400px;
-  height: 50px;
-  border: solid 1px;
-  border-bottom-left-radius: 70px;
-  border-top-left-radius: 70px;
-  border-bottom-right-radius: 70px;
-}
-
 .btn {
-  width: 120px;
+  width: 150px;
   height: 50px;
   border: solid 1px;
   border-bottom-left-radius: 70px;
@@ -30,13 +7,13 @@
   border-bottom-right-radius: 70px;
 }
 
-#right{
+#right {
   width: 50%;
   height: inherit;
   float: right;
   margin-top: 2rem;
 }
-#left{
+#left {
   width: 50%;
   height: inherit;
   float: left;

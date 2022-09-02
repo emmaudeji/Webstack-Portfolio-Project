@@ -24,19 +24,10 @@ const SearchButton = (props) => {
   return (
     <div className="md:mr-20 mt-5">
       <form className="relative" method="Post" action="">
-        <input
-          onChange={handleInputChange}
-          type={"text"}
-          value={country}
-          className="country rounded-full py-4 px-6 w-full text-black"
-          placeholder="Enter Country"
-        />
+        <input onChange={handleInputChange} type={"text"} value={country} className="country rounded-full py-4 px-6 w-full text-black outline-0" placeholder="Enter Country" />
 
         {/*you can replace with search icon */}
-        <button
-          onClick={handleSubmit}
-          className="absolute right-0 rounded-full py-4 px-6 bg-pink-700 hover:bg-purple-700"
-        >
+        <button onClick={handleSubmit} className="absolute right-0 rounded-full py-4 px-6 bg-pink-700 hover:bg-purple-700">
           Search
         </button>
       </form>
