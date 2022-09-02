@@ -69,9 +69,10 @@ function Home(props) {
       {/*Featured Properties */}
 
       <section className="bg-black h-screen text-white">
-        <div className="text-center pt-14">
+        <div className="text-center pt-2">
           <h3 className="text-purple-700 text-2xl">Featured Properties</h3>
           <p>Check out the top rated properties around the world.</p>
+          <FeaturedProperty />
           <FeaturedProperty />
         </div>
       </section>

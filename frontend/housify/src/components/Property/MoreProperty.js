@@ -17,58 +17,22 @@ const MoreProperty = () => {
         {/* property-card-container */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="p-2">
-            <PropertyCard
-              img={""}
-              price="$10,000"
-              propertyType="Bungalow"
-              city="Lagos"
-              country="NG"
-            />
+            <PropertyCard img={""} price="$10,000" propertyType="Bungalow" city="Lagos" country="NG" />
           </div>
           <div className="p-2">
-            <PropertyCard
-              img={""}
-              price="$10,000"
-              propertyType="Bungalow"
-              city="Lagos"
-              country="NG"
-            />
+            <PropertyCard img={""} price="$10,000" propertyType="Bungalow" city="Lagos" country="NG" />
           </div>
           <div className="p-2">
-            <PropertyCard
-              img={""}
-              price="$10,000"
-              propertyType="Bungalow"
-              city="Lagos"
-              country="NG"
-            />
+            <PropertyCard img={""} price="$10,000" propertyType="Bungalow" city="Lagos" country="NG" />
           </div>
           <div className="p-2">
-            <PropertyCard
-              img={""}
-              price="$10,000"
-              propertyType="Bungalow"
-              city="Lagos"
-              country="NG"
-            />
+            <PropertyCard img={""} price="$10,000" propertyType="Bungalow" city="Lagos" country="NG" />
           </div>
           <div className="p-2">
-            <PropertyCard
-              img={""}
-              price="$10,000"
-              propertyType="Bungalow"
-              city="Lagos"
-              country="NG"
-            />
+            <PropertyCard img={""} price="$10,000" propertyType="Bungalow" city="Lagos" country="NG" />
           </div>
           <div className="p-2">
-            <PropertyCard
-              img={""}
-              price="$10,000"
-              propertyType="Bungalow"
-              city="Lagos"
-              country="NG"
-            />
+            <PropertyCard img={""} price="$10,000" propertyType="Bungalow" city="Lagos" country="NG" />
           </div>
         </div>
         <div className="w-full pt-10 items-center">
