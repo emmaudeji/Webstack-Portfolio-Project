@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import House from "../../assets/h1.jpg";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import HeroImageBox from "../utils/HeroImageBox";

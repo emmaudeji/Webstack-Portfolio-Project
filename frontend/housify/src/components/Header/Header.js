@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import logo from "../../assets/housify.png";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import Button from "../utils/Button";
 
 function Header() {
-
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
-  }
+  };
 
   return (
     <div className="Header bg-zinc-900 w-full">
@@ -40,7 +40,7 @@ function Header() {
             </Link>
             <button className="">
               <Link className="" to="/UserForm">
-                Get Started
+                label="Get Started"
               </Link>
             </button>
           </nav>
@@ -48,13 +48,21 @@ function Header() {
 
         {/* Hamburger menu */}
         <div onClick={handleNav} className="block md:hidden mr-0">
-          {nav ? <AiOutlineClose size={30} className="" /> :
-            <AiOutlineMenu size={30} className="" />}
-
+          {nav ? (
+            <AiOutlineClose size={30} className="" />
+          ) : (
+            <AiOutlineMenu size={30} className="" />
+          )}
         </div>
 
         {/* Mobile Menu */}
-        <div className={nav ? "w-full left-0 flex justify-center text-center bg-zinc-900 top-[80px] absolute" : "absolute left-[-100%]"}>
+        <div
+          className={
+            nav
+              ? "w-full left-0 flex justify-center text-center bg-zinc-900 top-[80px] absolute"
+              : "absolute left-[-100%]"
+          }
+        >
           <nav className="mb-4">
             <Link className="block p-3 text-xl" to="/">
               Home
@@ -74,14 +82,10 @@ function Header() {
             <Link className="block p-3 text-xl" to="/blog">
               Blog
             </Link>
-            <button className="block m-4">
-              Get Started
-            </button>
+            <button className="block m-4">Get Started</button>
           </nav>
         </div>
-
       </div>
-
     </div>
   );
 }
