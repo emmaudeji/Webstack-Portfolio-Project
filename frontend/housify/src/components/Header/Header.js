@@ -13,7 +13,7 @@ function Header() {
     <div className="Header bg-zinc-900 w-full">
       <div className="max-w-[1440px] mx-auto py-6 px-10 flex justify-between">
         <div>
-          <img className="h-8 w-70" src={logo} />
+          <img className="h-8 w-70 ml-16" src={logo} alt="Housify-logo" />
         </div>
         <div className="hidden md:flex">
           <nav className="flex items-center">
