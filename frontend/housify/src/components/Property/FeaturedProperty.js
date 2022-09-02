@@ -7,14 +7,14 @@ import PropertyCard from "../utils/PropertyCard";
 const FeaturedProperty = () => {
   return (
     <div className="w-full">
-      <div className="max-w-[1440px] mx-auto py-20 px-10 flex-col justify-between text-center md:flex-row">
+      <div className="container">
         {/* section label */}
         <div className="py-10">
           <h2> Top rated properties </h2>
         </div>
 
         {/* property-card-container */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           <div className="p-2">
             <PropertyCard
               img={""}
