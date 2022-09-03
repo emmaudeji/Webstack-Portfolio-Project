@@ -1,6 +1,4 @@
-import React, { useState } from "react";
 import HeroImageBox from "../utils/HeroImageBox";
-import SearchButton from "../utils/SearchButton";
 
 const Hero = (props) => {
   return (
@@ -9,27 +7,13 @@ const Hero = (props) => {
         <div className="md:grid text-center md:text-left grid-cols-2 gap-10">
           {/* Header Text */}
           <div className="my-10 md:my-auto">
-            <h1 className="pb-4 text-4xl md:text-6xl">{props.header}</h1>
-            <h5>{props.text}</h5>
-            <SearchButton />
+            <h1 className="pb-8 text-4xl md:text-6xl">{props.header}</h1>
+            <p>{props.text}</p>
           </div>
 
           {/* HeroImageBox component */}
-          <HeroImageBox />
+          <HeroImageBox p="Texas ChampHouse UK" />
         </div>
-
-        {/* search block component */}
-        {/* <div className="seachProperty">
-          <div className="flex flex row mx-auto my-10">
-            <input>
-              <select>
-                <option>
-
-                </option>
-              </select>
-            </input>
-          </div>
-        </div> */}
       </div>
     </div>
   );
