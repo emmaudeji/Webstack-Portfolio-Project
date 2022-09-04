@@ -8,7 +8,7 @@ const ExpertCard = (props) => {
       <div className="Image-wrapper w-full bg-zinc-500 rounded-[50px] rounded-tr-none h-[280px] overflow-hidden mb-4">
         <img className="w-full object-cover" src={props.img} alt="" />
       </div>
-      <div className="px-6 pb-4 text-xl">
+      <div className="px-6 pb-4">
         <div class="flex justify-between pt-2">
           <p>{props.name}</p>
           <div className=" flex  text-[24px]  hover:text-purple-700 duration-300">

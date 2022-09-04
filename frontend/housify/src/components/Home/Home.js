@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../Header/Header";
-import FeaturedProperty from "../Property/FeaturedProperty";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import GroupIcon from "@mui/icons-material/Group";
 import Footer from "../Footer/Footer";
@@ -8,6 +7,8 @@ import HeroImageBox from "../utils/HeroImageBox";
 import "./Home.css";
 import SearchButton from "../utils/SearchButton";
 import MoreProperty from "../Property/MoreProperty";
+import ExpertSection from "../utils/ExpertSection";
+import Works from "../utils/Works";
 
 function Home() {
   return (
@@ -63,7 +64,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="bg-black h-screen text-white">
+      <section className="bg-black text-white">
         <div className="text-center pt-2">
           <h3 className="text-purple-700 text-2xl">Featured Properties</h3>
           <p>Check out the top rated properties around the world.</p>
@@ -71,18 +72,23 @@ function Home() {
           <MoreProperty />
         </div>
       </section>
-      <section className="bg-black h-screen text-white">
+      <section className="bg-black  text-white">
         <div className="text-center pt-14">
           <h3 className="text-purple-700 text-2xl">How it Works</h3>
           <p>Confidence in Collaboration</p>
         </div>
+        <Works />
+        <Works />
+        <Works />
+        <Works />
       </section>
-      <section className="bg-black h-screen text-white">
-        <div className="text-center pt-14">
+      <section className="bg-black text-white">
+        <div className="text-center ">
           <h3 className="text-purple-700 text-2xl">Meet an Agent</h3>
           <p>Do you prefer to get advice from an Agent?</p>
           <p>Now you meet them across the world.</p>
         </div>
+        <ExpertSection />
       </section>
       <section className="bg-black h-screen text-white">
         <div className="text-center pt-14">
