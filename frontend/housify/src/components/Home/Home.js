@@ -65,21 +65,13 @@ function Home() {
       </section>
 
       <section className="bg-black text-white">
-        <div className="text-center pt-2">
-          <h3 className="text-purple-700 text-2xl">Featured Properties</h3>
-          <p>Check out the top rated properties around the world.</p>
-
-          <MoreProperty />
-        </div>
+        <MoreProperty header="Featured Properties" text="Check out the top rated properties around the world" />
       </section>
       <section className="bg-black  text-white">
         <div className="text-center pt-14">
           <h3 className="text-purple-700 text-2xl">How it Works</h3>
           <p>Confidence in Collaboration</p>
         </div>
-        <Works />
-        <Works />
-        <Works />
         <Works />
       </section>
       <section className="bg-black text-white">

@@ -8,7 +8,7 @@ const MoreProperty = (props) => {
         {/* section label */}
         <div className="py-10">
           <h3 className="text-purple-700"> {props.header} </h3>
-          <h5 className="pt-4"> {props.text} </h5>
+          <h5 className="pt-2"> {props.text} </h5>
         </div>
         {/* property-card-container */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 p-10">
