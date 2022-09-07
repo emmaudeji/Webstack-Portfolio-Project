@@ -5,7 +5,7 @@ import Property from "./components/Property/Property";
 import Agent from "./components/Agent/Agent";
 import Blog from "./components/Blog/Blog";
 import Contact from "./components/Contact/Contact";
-import RegisterAgent from "./components/Forms/RegisterAgent";
+import RegisterAgent from "./components/Templates/RegisterAgent";
 import { Routes, Route, Link } from "react-router-dom";
 import Error from "./components/Error/Error";
 
