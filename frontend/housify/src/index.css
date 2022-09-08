@@ -35,10 +35,6 @@ h4 {
 }
 
 h5 {
-  @apply font-semibold;
-}
-
-h5 {
   @apply text-xl;
 }
 

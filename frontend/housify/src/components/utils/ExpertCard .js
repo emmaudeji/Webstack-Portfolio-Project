@@ -12,8 +12,8 @@ const ExpertCard = (props) => {
         <div class="flex justify-between pt-2">
           <p>{props.name}</p>
           <div className=" flex  text-[24px]  hover:text-purple-700 duration-300">
-            <FaLinkedin className="mr-2" />
-            <FaPhone />
+            <FaLinkedin className="mr-2 text-xl text-cyan-600 cursor-pointer" />
+            <FaPhone className="text-xl cursor-pointer text-black" />
           </div>
         </div>
       </div>
