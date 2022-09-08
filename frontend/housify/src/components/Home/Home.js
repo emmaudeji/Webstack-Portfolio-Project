@@ -8,8 +8,12 @@ import ExpertSection from "../utils/ExpertSection";
 import Works from "../utils/Works";
 import Service from "../About/Service";
 import Partners from "../utils/Partners";
+import useFetch from "../utils/useFetch";
 
 function Home() {
+
+  const {items} = useFetch()
+
   return (
     <div className="Home">
       <Header />
@@ -21,7 +25,8 @@ function Home() {
               <p className="text-xl mb-10">Let's help you find a home that is perfect for you</p>
               <SearchButton />
             </div>
-            <HeroImageBox p="Featured Homes" />
+            {<HeroImageBox p="Featured Homes" url ={items[0]?.url}/>}
+            {/* <HeroImageBox p="Featured Homes" url ={false | require("../../assets/h2.jpg")}/> */}
           </div>
         </div>
       </section>
@@ -64,7 +69,6 @@ function Home() {
       <section className="bg-black  text-center pt-16">
         <h3 className="text-purple-700 text-2xl ">Have a Question?</h3>
         <p className="mb-20 text-white">Let us help you.</p>
-
         <Footer />
       </section>
     </div>
