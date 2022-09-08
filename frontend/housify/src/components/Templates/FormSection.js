@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 
-const Form = (props) => {
+const Form = () => {
+
   // implementing state and hooks
 
   const [inputs, setInputs] = useState({

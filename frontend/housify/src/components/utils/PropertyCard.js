@@ -8,11 +8,12 @@ const PropertyCard = (props) => {
       </div>
       <div className="px-6 pb-4 ">
         <p className="text-right font-semibold">{props.price}</p>
-        <div class="flex justify-between pt-2">
-          <p>{props.propertyType}</p>
+        <div className="flex justify-between pt-2">
+          <p>{props.purpose}</p>
           <p>
-            {props.city} <span>{props.country}</span>
+            {props.state}
           </p>
+          <p>{props.title}</p>
         </div>
       </div>
     </div>
