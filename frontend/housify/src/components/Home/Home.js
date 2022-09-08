@@ -7,6 +7,7 @@ import MoreProperty from "../Property/MoreProperty";
 import ExpertSection from "../utils/ExpertSection";
 import Works from "../utils/Works";
 import Service from "../About/Service";
+import Partners from "../utils/Partners";
 
 function Home() {
   return (
@@ -55,11 +56,12 @@ function Home() {
       </section>
       <section className="bg-black text-white">
         <div className="text-center pt-14">
-          <h3 className="text-purple-700 text-2xl">Our Parners</h3>
-          <p>We have strong partnership with renowned agencies and organizations.</p>
+          <h3 className="text-purple-700 text-2xl">Our Partners</h3>
+          <p className="mb-12">We have strong partnership with renowned agencies and organizations.</p>
         </div>
+        <Partners />
       </section>
-      <section className="bg-black  text-center">
+      <section className="bg-black  text-center pt-16">
         <h3 className="text-purple-700 text-2xl ">Have a Question?</h3>
         <p className="mb-20 text-white">Let us help you.</p>
 
