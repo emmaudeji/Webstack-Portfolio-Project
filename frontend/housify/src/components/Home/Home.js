@@ -37,14 +37,14 @@ function Home() {
         <MoreProperty header="Featured Properties" text="Check out the top rated properties around the world" />
       </section>
       <section className="bg-black  text-white">
-        <div className="text-center pt-14">
+        <div className="text-center pt-20">
           <h3 className="text-purple-700 text-2xl">How it Works</h3>
-          <p>Confidence in Collaboration</p>
+          <p className="mb-12">Confidence in Collaboration</p>
         </div>
         <Works />
       </section>
       <section className="bg-black text-white">
-        <div className="text-center ">
+        <div className="text-center pt-20">
           <h3 className="text-purple-700 text-2xl">Meet an Agent</h3>
           <p>Do you prefer to get advice from an Agent?</p>
           <p>Now you meet them across the world.</p>
