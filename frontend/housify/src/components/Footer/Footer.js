@@ -9,7 +9,7 @@ function Footer() {
       <div className="max-w-[1440px] mx-auto pt-10 md:pt-20 pb-5 px-10 flex-col justify-between text-center md:text-left md:grid grid-cols-4 gap-12">
         {/* footer header */}
         <div className="col-span-2 pt-10 md:pt-0">
-          <h2>Do You Have Questions With Anything?</h2>
+          <h3>Do You Have Questions With Anything?</h3>
           <p className="py-6 text-xl">Receive Updates, discount rates, expert services, payment details, tutorials sent direct to your inbox.</p>
           <div>
             <form className="relative" method="Post" action="">

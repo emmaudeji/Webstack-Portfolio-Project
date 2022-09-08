@@ -2,72 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Custom Styles */
 @layer base {
   * {
-    @apply font-[montserrat]
+    @apply font-[montserrat];
   }
 }
 
 body {
-  @apply bg-zinc-900 text-zinc-100
+  @apply bg-zinc-900 text-zinc-100 m-0;
 }
 
 .container {
-  @apply max-w-[1440px] mx-auto py-20 px-10 text-center
+  @apply max-w-[1440px] mx-auto py-20 px-10 text-center;
 }
 h1 {
-  @apply text-6xl font-extrabold
+  @apply text-6xl font-extrabold;
 }
 
 h2 {
-  @apply text-4xl font-medium
+  @apply text-4xl font-bold;
 }
 
 h3 {
-  @apply text-3xl font-medium
+  @apply text-2xl font-medium;
 }
 
 h4 {
-  @apply text-2xl font-bold
+  @apply text-2xl font-bold;
 }
 
 h5 {
-  @apply text-xl font-semibold
+  @apply font-semibold;
+}
+
+h5 {
+  @apply text-xl;
 }
 
 button,
 .button {
-  @apply bg-purple-800 px-5 py-3 font-medium rounded-full transition ease-in-out duration-300 hover:scale-105 hover:bg-purple-900 rounded-tr-none
+  @apply bg-purple-800 px-5 py-3 font-medium rounded-full transition ease-in-out duration-300 hover:scale-105 hover:bg-purple-900 rounded-tr-none;
 }
 
 .navlink {
-  @apply hover:text-purple-500 hover:scale-105 duration-300
+  @apply hover:text-purple-500 hover:scale-105 duration-300;
 }
 
 .formLabel {
-  @apply block
+  @apply block;
 }
 
 .formInput {
-  @apply mb-4 w-full rounded-sm text-black bg-zinc-300 focus:outline-none p-2 hover:bg-zinc-50 duration-300
+  @apply mb-4 w-full rounded-sm text-black bg-zinc-300 focus:outline-none p-2 hover:bg-zinc-50 duration-300;
 }
 
-
-
-body {
-  margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
+.bigIcon {
+  @apply w-[20px];
 }
-
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-} */
-
-
