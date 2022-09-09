@@ -20,8 +20,6 @@ function Property() {
       <Hero header="Discover More suitable properties across the world" />
 
       <SearchBar />
-
-      <SearchBar />
     
       <FeaturedProperty items={items} />
       <MoreProperty />
