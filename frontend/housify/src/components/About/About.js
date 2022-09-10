@@ -3,6 +3,8 @@ import Header from "../Header/Header";
 import Service from "./Service";
 import Footer from "../Footer/Footer";
 import SearchBar from "../utils/SearchBar";
+import Credibility from "./Credibility";
+import Team from "./Team";
 
 function About() {
   return (
@@ -16,6 +18,8 @@ function About() {
 
       <SearchBar header="Let's Find A Property That Meets Your Need" />
       <br className=""></br>
+      <Credibility header="Why Trust Us" text="We Guarantee Quality Delivery" />
+      <Team header="Our Team" text="Meet Our Amazing Team" />
       <Footer />
     </div>
   );

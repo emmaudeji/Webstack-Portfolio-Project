@@ -10,8 +10,7 @@ import { Routes, Route } from "react-router-dom";
 import Error from "./components/Error/Error";
 
 function App() {
-
-    return (
+  return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="about" element={<About />} />
