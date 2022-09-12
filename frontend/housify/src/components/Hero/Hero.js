@@ -2,8 +2,7 @@ import HeroImageBox from "../utils/HeroImageBox";
 import useFetch from "../utils/useFetch";
 
 const Hero = () => {
-
-  const {items} = useFetch()
+  const { items } = useFetch();
 
   return (
     <div className="w-full">
@@ -13,12 +12,11 @@ const Hero = () => {
           <div className="my-10 md:my-auto">
             <h1 className="pb-8 text-4xl md:text-6xl">{items.header}</h1>
             {/* <p>{items.text} </p> */}
-            <p className="text-6xl mb-10">Let's help you find a home that is perfect for you</p>
+            <p className="text-6xl mb-10">{items.text}</p>
           </div>
 
           {/* HeroImageBox component */}
-          <HeroImageBox p="Texas ChampHouse UK" url ={items[0]?.url}/>
-
+          <HeroImageBox p="Texas ChampHouse UK" url={items[0]?.url} />
         </div>
       </div>
     </div>
