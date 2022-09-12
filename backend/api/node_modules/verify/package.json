@@ -1,0 +1,29 @@
+{
+    "name": "verify",
+    "version": "0.1.2",
+    "description": "```javascript",
+    "main": "./lib/index.js",
+    "directories": {
+        "example": "examples"
+    },
+    "dependencies": {
+        "validator": "~0.4.13",
+        "structr": "0.2.x",
+        "comerr": "0.0.x",
+        "toarray": "0.0.x",
+        "sift": "0.0.x"
+    },
+    "devDependencies": {
+        "mocha": "1.8.x",
+        "expect.js": "0.2.x"
+    },
+    "scripts": {
+        "test": "mocha --reporter min"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://crcn:KQ3Lc6za@github.com/crcn/verify.js.git"
+    },
+    "author": "",
+    "license": "BSD"
+}
