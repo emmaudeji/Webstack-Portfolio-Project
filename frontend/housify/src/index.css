@@ -19,7 +19,7 @@ body {
   @apply max-w-[1440px] mx-auto py-20 px-10 text-center;
 }
 h1 {
-  @apply text-6xl font-bold;
+  @apply text-5xl font-bold;
 }
 
 h2 {
