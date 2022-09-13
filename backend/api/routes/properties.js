@@ -2,8 +2,13 @@ const router = require("express").Router();
 const Property = require("../models/Property");
 const verify = require("../verifyToken");
 
-//CREATE LIST
-router.post("/", verify, async (req, res) => {
+//GET ALL AGENTS
+router.get("/agents", verify, async (req, res) => {}
+
+
+
+//CREATE LIST BASED ON AGENT CATEGORY/AGENYT-ID
+router.post("/agents/agent-id/{...}", verify, async (req, res) => {
   if (req.user.isAdmin) {
     const newProperty = new Property(req.body);
 
@@ -18,7 +23,9 @@ router.post("/", verify, async (req, res) => {
   }
 });
 
+
 //DELETE
+//router.delete("/agents/agent-id/property-id",
 router.delete("/:id", verify, async (req, res) => {
   if (req.user.isAdmin) {
     try {
@@ -32,7 +39,8 @@ router.delete("/:id", verify, async (req, res) => {
   }
 });
 
-//GET
+//GET PROPERTY BASED ON AGENT ID
+//router.get("/agents/agent-id/property",
 router.get("/", verify, async (req, res) => {
   const typeQuery = req.query.type;
   const genreQuery = req.query.genre;
