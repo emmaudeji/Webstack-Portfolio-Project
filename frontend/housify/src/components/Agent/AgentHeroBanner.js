@@ -29,7 +29,7 @@ const AgentHeroBanner = (props) => {
                 <p>@zelipha_properties</p>
               </div>
 
-              <button className="">
+              <button className="mt-10 w-[200px]">
                 <NavLink className="" to="/AgentForm">
                   Edit Profile
                 </NavLink>
