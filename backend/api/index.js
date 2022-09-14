@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/properties", propertiesRoute);
-//app.use("/api/agents", agentsRoute);
+app.use("/api/agents", agentsRoute);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);

@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+import axios from "axios";
 
 const SignupForm = (props) => {
   // implementing state and hooks
@@ -19,7 +20,7 @@ const SignupForm = (props) => {
     }
   };
 
-  const handleInputChange = (event) => {
+  const handleInputChange = async (event) => {
     event.persist();
     const { name, value } = event.target;
 
@@ -27,6 +28,13 @@ const SignupForm = (props) => {
       ...prevInputs,
       [name]: value,
     }));
+
+    try {
+      await axios.post("auth/SignupForm", { email, username, password });
+      navigate("/LoginForm");
+  } catch (err) {console.log(err);}
+  
+  
   };
 
   return (
