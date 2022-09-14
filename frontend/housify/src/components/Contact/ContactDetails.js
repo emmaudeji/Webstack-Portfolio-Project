@@ -1,8 +1,8 @@
 import React from "react";
-// import GrLocation from "react-icons/gr";
-// import FiClock from "react-icons/fi";
-// import AiOutlinePhone from "react-icons/ai";
-// import HiOutlineMail from "react-icons/hi";
+// import HiOutlineLocationMarker from "react-icons/hi";
+import FiClock from "react-icons/fi";
+import AiOutlinePhone from "react-icons/ai";
+import HiOutlineMail from "react-icons/hi";
 
 function ContactDetails() {
   return (
@@ -12,7 +12,7 @@ function ContactDetails() {
           <div className="text-center">
             <div className="p-4 ">
               <div className="flex justify-center text-40 pb-4">
-                {/* <GrLocation /> */}
+                {/* <HiOutlineLocationMarker /> */}
               </div>
               <h5>Nigeria</h5>
               <p className="p4">7 Mcc Avenue, Osborn Center, Lagos</p>

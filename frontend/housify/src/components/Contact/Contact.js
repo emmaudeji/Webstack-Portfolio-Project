@@ -12,13 +12,16 @@ function Contact() {
     <div className="Contact">
       <Header />
       <Hero
-        header="Got SOme Questions To Ask?"
-        text="We would like to find out how we can serve you better. We respond within 2 hours."
+        header="Got Some Questions To Ask?"
+        text="We would like to know how we can serve you better. We respond within 2 hours."
       />
       <ContactDetails />
       <GoogleMap />
       <ContactFormSection />
-      <SearchBar />
+      <div className="pt-10 pb-[100px] text-center">
+        <h4>Find A House That Meets Your Need</h4>
+        <SearchBar />
+      </div>
       <Footer />
     </div>
   );

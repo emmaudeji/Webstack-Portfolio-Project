@@ -1,8 +1,9 @@
 import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import AgentHeroBanner from "./AgentHeroBanner";
+import Hero from "../Hero/Hero";
 import MoreProperty from "../Property/MoreProperty";
+import SearchBar from "../utils/SearchBar";
 // import FeaturedProperty from "../Property/FeaturedProperty";
 import ExpertSection from "../utils/ExpertSection";
 
@@ -10,17 +11,22 @@ function Agent() {
   return (
     <div className="Agent">
       <Header />
-      <AgentHeroBanner
-        header="Zelipha Onyeoma"
-        text="Expert dealer in Residential Homes and Luxury apartments. Licensed in Canada and Asia. Trusted by experts and companies with 4.5 rating in Trustpilot."
-        label="Contact Zelipha"
+      <Hero header="We have Expert Agents ready to support your goals" />
+
+      <ExpertSection
+        header="Meet Expert Agents"
+        text="We have certified experts ready to attend to you"
       />
-      <MoreProperty header="Properties" text="Listed Properties By Zelipha" />
+      <SearchBar />
+      <MoreProperty
+        header="Properties"
+        text="Find More Properties that meets your need"
+      />
       {/* <FeaturedProperty
         header="Featured Properties"
         text="Top Rated Properties"
       /> */}
-      <ExpertSection header="Meet Expert Agents" text="We have certified experts ready to attend to you" />
+      <div className="mt-20"></div>
       <Footer />
     </div>
   );
