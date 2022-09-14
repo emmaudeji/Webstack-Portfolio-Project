@@ -2,8 +2,6 @@ const mongoose = require("mongoose");
 
 const PropertySchema = new mongoose.Schema(
     {
-        firstname: {type: String, required:true, unique:false},
-        surname: {type: String, required:true, unique:false},
         address: {type: String, required:true, unique:true},
         city: {type: String, required:true, unique:false},
         state: {type: String, required:true, unique:false},
@@ -15,6 +13,7 @@ const PropertySchema = new mongoose.Schema(
         View3: {type: String, default: ""},
         View4: {type: String, default: ""},
         description: {type: String, required:true, unique:false},
+        price: { type: Number, required:true, unique:false}
 
 
     },

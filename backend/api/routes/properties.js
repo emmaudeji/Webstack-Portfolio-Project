@@ -2,8 +2,8 @@ const router = require("express").Router();
 const Property = require("../models/Property");
 const verify = require("../verifyToken");
 
-//CREATE LIST
-router.post("/", verify, async (req, res) => {
+//CREATE LIST OF PROPERTY AS PER AGENT
+router.post("/users/:id/property", verify, async (req, res) => {
   if (req.user.isAdmin) {
     const newProperty = new Property(req.body);
 
@@ -18,9 +18,9 @@ router.post("/", verify, async (req, res) => {
   }
 });
 
-//DELETE
-router.delete("/:id", verify, async (req, res) => {
-  if (req.user.isAdmin) {
+//DELETE PROPERTY AS PER AGENT
+router.delete("users/:id/property", verify, async (req, res) => {
+  if (req.users.isAdmin) {
     try {
       await Property.findByIdAndDelete(req.params.id);
       res.status(201).json("The list has been deleted...");
@@ -32,8 +32,8 @@ router.delete("/:id", verify, async (req, res) => {
   }
 });
 
-//GET
-router.get("/", verify, async (req, res) => {
+//GET PROPERTY AS PER AGENT
+router.get("/users/:id/property", verify, async (req, res) => {
   const typeQuery = req.query.type;
   const genreQuery = req.query.genre;
   //const narationQuery = req.query.narration;
