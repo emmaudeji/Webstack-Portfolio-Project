@@ -1,4 +1,6 @@
 import { React, useState } from "react";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const SignupForm = (props) => {
   // implementing state and hooks
@@ -6,6 +8,7 @@ const SignupForm = (props) => {
   const [inputs, setInputs] = useState({
     password: "",
     email: "",
+    repeatPassword: "",
   });
 
   const handleSubmit = (event) => {
@@ -14,9 +17,12 @@ const SignupForm = (props) => {
 
       alert(`Welcome ${inputs.email}!
          `);
-
-      setInputs("");
     }
+    setInputs({
+      password: "",
+      email: "",
+      repeatPassword: "",
+    });
   };
 
   const handleInputChange = (event) => {
@@ -33,19 +39,18 @@ const SignupForm = (props) => {
     <div className="Property">
       <Header />
       <div className="w-full mx-auto p-10 text-center">
-        <h2 className="pb-4">SignUp For The Best of Experience?</h2>
+        <h2 className="font-semibold">SignUp For The Best of Experience?</h2>
       </div>
-      <div className="w-full  mx-auto py-20 px-10  justify-between text-center  bg-zinc-800 my-10">
+      <div className="py-20 px-10 text-center  bg-zinc-800 my-10">
         {/* testing form */}
         {/* <h4>
-          Hello {inputs.email} {inputs.password}
-        </h4>
-       */}
+          Hello {inputs.email} {inputs.password} {inputs.repeatPassword}
+        </h4> */}
 
         <form onSubmit={handleSubmit}>
-          <div className=" md:mx-[100px] md:grid grid-cols-2 gap-10  text-xl text-left pb-10 items-center">
-            <div>
-              <h2 className="font-thin text-left pb-4 text-5xl">Login</h2>
+          <div className="flex  text-left h-[350px] mb-10 justify-center align-middle text-xl ">
+            <div className="w-[400px]">
+              <h2 className="font-thin  pb-4 text-5xl">Login</h2>
 
               <div>
                 <label>Email Address</label>
@@ -65,19 +70,40 @@ const SignupForm = (props) => {
                 <input
                   className="formInput"
                   type="password"
+                  mx-auto
+                  py-20
+                  px-10
+                  justify-between
+                  text-center
                   name="password"
                   onChange={handleInputChange}
                   placeholder="Enter Password"
                   value={inputs.password}
                 />
               </div>
-            </div>
-          </div>
 
-          <div className="mx-auto text-center text-2xl">
-            <button type="submit button" className="px-14 py-6">
-              Submit
-            </button>
+              <div>
+                <label>Renter Password</label>
+                <input
+                  className="formInput"
+                  type="password"
+                  mx-auto
+                  py-20
+                  px-10
+                  justify-between
+                  text-center
+                  name="repeatPassword"
+                  onChange={handleInputChange}
+                  placeholder="Renter Password"
+                  value={inputs.repeatPassword}
+                />
+              </div>
+              <div className="mx-auto text-left text-xl">
+                <button type="submit button" className="px-10 py-4">
+                  Submit
+                </button>
+              </div>
+            </div>
           </div>
         </form>
       </div>

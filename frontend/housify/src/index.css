@@ -9,6 +9,14 @@
   * {
     @apply font-[montserrat];
   }
+
+    .flex-container {
+      display: flex;
+       height: 300px;
+       justify-content: center;
+       align-items: center;
+    }
+
 }
 
 body {
@@ -58,3 +66,4 @@ button,
 .bigIcon {
   @apply w-[20px];
 }
+

@@ -1,5 +1,6 @@
 import React from "react";
 import Zeliq from "../../assets/Zeliq.jpg";
+import { NavLink } from "react-router-dom";
 
 const AgentHeroBanner = (props) => {
   return (
@@ -27,13 +28,23 @@ const AgentHeroBanner = (props) => {
                 <h5 className="inline-block mr-4">Instagram</h5>
                 <p>@zelipha_properties</p>
               </div>
+
+              <button className="">
+                <NavLink className="" to="/AgentForm">
+                  Edit Profile
+                </NavLink>
+              </button>
             </div>
           </div>
 
           {/* header Image */}
           <div className="my-auto relative pt-12 mr-16">
             <div className="img-wrap overflow-hidden bg-zinc-700 rounded-[100px] rounded-tr-none w-[90%] md:ml-auto relative">
-              <img className="w-full h-[70vh] object-cover" src={Zeliq} alt="Zeliq" />
+              <img
+                className="w-full h-[70vh] object-cover"
+                src={Zeliq}
+                alt="Zeliq"
+              />
             </div>
             <div className="absolute top-[80%]">
               <p className="button text-[24px] px-8">{props.label}</p>
