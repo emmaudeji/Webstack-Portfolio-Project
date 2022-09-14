@@ -2,13 +2,8 @@ const router = require("express").Router();
 const Property = require("../models/Property");
 const verify = require("../verifyToken");
 
-//GET ALL AGENTS
-router.get("/agents", verify, async (req, res) => {}
-
-
-
-//CREATE LIST BASED ON AGENT CATEGORY/AGENYT-ID
-router.post("/agents/agent-id/{...}", verify, async (req, res) => {
+//CREATE LIST OF PROPERTY AS PER AGENT
+router.post("/users/:id/property", verify, async (req, res) => {
   if (req.user.isAdmin) {
     const newProperty = new Property(req.body);
 
@@ -19,15 +14,13 @@ router.post("/agents/agent-id/{...}", verify, async (req, res) => {
       res.status(500).json(err);
     }
   } else {
-    res.status(403).json("You are not allowed!")
+    res.status(403).json("You are not allowed!");
   }
 });
 
-
-//DELETE
-//router.delete("/agents/agent-id/property-id",
-router.delete("/:id", verify, async (req, res) => {
-  if (req.user.isAdmin) {
+//DELETE PROPERTY AS PER AGENT
+router.delete("users/:id/property", verify, async (req, res) => {
+  if (req.users.isAdmin) {
     try {
       await Property.findByIdAndDelete(req.params.id);
       res.status(201).json("The list has been deleted...");
@@ -35,13 +28,12 @@ router.delete("/:id", verify, async (req, res) => {
       res.status(500).json(err);
     }
   } else {
-    res.status(403).json("You are not allowed!")
+    res.status(403).json("You are not allowed!");
   }
 });
 
-//GET PROPERTY BASED ON AGENT ID
-//router.get("/agents/agent-id/property",
-router.get("/", verify, async (req, res) => {
+//GET PROPERTY AS PER AGENT
+router.get("/users/:id/property", verify, async (req, res) => {
   const typeQuery = req.query.type;
   const genreQuery = req.query.genre;
   //const narationQuery = req.query.narration;

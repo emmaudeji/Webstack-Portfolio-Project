@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import ExpertCard from "./ExpertCard ";
+import React from "react";
+import ExpertCard from "./ExpertCard";
 
 const ExpertSection = (props) => {
   return (

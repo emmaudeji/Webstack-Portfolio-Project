@@ -9,7 +9,7 @@ const ExpertCard = (props) => {
         <img className="w-full object-cover" src={props.img} alt="" />
       </div>
       <div className="px-6 pb-4">
-        <div class="flex justify-between pt-2">
+        <div className="flex justify-between pt-2">
           <p>{props.name}</p>
           <div className=" flex  text-[24px]  hover:text-purple-700 duration-300">
             <FaLinkedin className="mr-2 text-xl text-cyan-600 cursor-pointer" />

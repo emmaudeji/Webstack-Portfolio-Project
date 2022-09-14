@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import UiFace from "../../assets/47.jpg";
+import React from "react";
+import Zeliq from "../../assets/Zeliq.jpg";
 
 const AgentHeroBanner = (props) => {
   return (
-    <div className="w-full">
+    <div className=" ml-16 ">
       <div className="max-w-[1440px] mx-auto py-5 px-10  md:flex justify-between">
         <div className="md:grid text-center md:text-left grid-cols-2 gap-10">
           {/* Header Text */}
@@ -31,13 +31,9 @@ const AgentHeroBanner = (props) => {
           </div>
 
           {/* header Image */}
-          <div className="my-auto relative pt-12">
+          <div className="my-auto relative pt-12 mr-16">
             <div className="img-wrap overflow-hidden bg-zinc-700 rounded-[100px] rounded-tr-none w-[90%] md:ml-auto relative">
-              <img
-                className="w-full h-[70vh] object-cover"
-                src={UiFace}
-                alt="featured image"
-              />
+              <img className="w-full h-[70vh] object-cover" src={Zeliq} alt="Zeliq" />
             </div>
             <div className="absolute top-[80%]">
               <p className="button text-[24px] px-8">{props.label}</p>

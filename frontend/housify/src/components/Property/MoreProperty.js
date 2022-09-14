@@ -3,8 +3,7 @@ import PropertyCard from "../utils/PropertyCard";
 import useFetch from "../utils/useFetch";
 
 const MoreProperty = () => {
-  
-  const {items} = useFetch()
+  const { items } = useFetch();
 
   return (
     <div className="w-full">
@@ -16,15 +15,11 @@ const MoreProperty = () => {
         </div>
         {/* property-card-container */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {
-            items.map(({id, title, url, price, purpose, state}) => (
+          {items.map(({ id, title, url, price, purpose, state }) => (
             <div className="p-10" key={id}>
-            <PropertyCard img={url} price={price} state={state} purpose={purpose} title={title} />
-          </div>
-          )
-              
-            )
-          }
+              <PropertyCard img={url} price={price} state={state} purpose={purpose} title={title} />
+            </div>
+          ))}
         </div>
         <div className="w-full pt-10 items-center">
           <button>Load More</button>
