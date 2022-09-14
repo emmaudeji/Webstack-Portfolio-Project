@@ -1,5 +1,6 @@
 import React from "react";
 import ExpertCard from "./ExpertCard";
+import { NavLink } from "react-router-dom";
 
 const ExpertSection = (props) => {
   return (
@@ -26,8 +27,13 @@ const ExpertSection = (props) => {
             <ExpertCard name="Robert Az" linkedin="" contact="" />
           </div>
         </div>
-        <div className="w-full pt-10 items-center">
-          <button>Load More</button>
+        <div className="w-full pt-10 flex justify-center">
+          <button className="mx-4">Load More</button>
+          <button className="mx-4">
+            <NavLink className="" to="/AgentForm">
+              Become Agent
+            </NavLink>
+          </button>
         </div>
       </div>
     </div>
