@@ -79,6 +79,9 @@ function Footer() {
               <NavLink className="pt-4 block text-base" to="/AgentForm">
                 <p className="text-l">Become an Agent</p>
               </NavLink>
+              <NavLink className="pt-4 block text-base" to="/loginForm">
+                <p className="text-l">Login</p>
+              </NavLink>
             </div>
           </div>
           {/* Blog */}

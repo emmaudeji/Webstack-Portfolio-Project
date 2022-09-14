@@ -1,7 +1,6 @@
 import { React, useState } from "react";
 
 const Form = () => {
-
   // implementing state and hooks
 
   const [inputs, setInputs] = useState({
@@ -126,9 +125,21 @@ const Form = () => {
             <div>
               <label>Bio: State Your Professional Summary</label>
               <input
-                className="formInput min-h-[220px]"
+                className="formInput min-h-[150px]"
                 type="textarea"
                 name="bio"
+                onChange={handleInputChange}
+                placeholder=""
+                value={inputs.bio}
+                required
+              />
+            </div>
+            <div>
+              <label>Profile Picture</label>
+              <input
+                className="formInput"
+                type="text"
+                name="imageUrl"
                 onChange={handleInputChange}
                 placeholder=""
                 value={inputs.bio}

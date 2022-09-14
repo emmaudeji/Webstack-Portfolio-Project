@@ -17,7 +17,7 @@ function Header() {
             <img className="h-8 w-70" src={logo}></img>
           </NavLink>
         </div>
-        <div className="hidden md:flex">
+        <div className="hidden lg:flex">
           <nav className="flex items-center">
             <NavLink
               to="/"
@@ -91,7 +91,7 @@ function Header() {
         {/* Hamburger menu */}
         <div
           onClick={handleNav}
-          className="block md:hidden mr-0 p-2 rounded-2xl hover:bg-purple-700 duration-300"
+          className="block lg:hidden mr-0 p-2 rounded-2xl hover:bg-purple-700 duration-300"
         >
           {nav ? (
             <AiOutlineClose size={30} className="" />

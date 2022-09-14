@@ -9,6 +9,7 @@ import SignupForm from "./components/Templates/SignupForm";
 import AgentDashboard from "./components/Agent/AgentDashboard";
 import { Routes, Route } from "react-router-dom";
 import Error from "./components/Error/Error";
+import LoginForm from "./components/Templates/LoginForm";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route path="agentDashboard" element={<AgentDashboard />} />
       <Route path="UserForm" element={<SignupForm />} />
       <Route path="AgentForm" element={<RegisterAgent />} />
+      <Route path="loginForm" element={<LoginForm />} />
       <Route path="*" element={<Error />} />
     </Routes>
   );

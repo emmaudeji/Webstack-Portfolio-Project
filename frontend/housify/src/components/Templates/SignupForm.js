@@ -39,7 +39,7 @@ const SignupForm = (props) => {
     <div className="Property">
       <Header />
       <div className="w-full mx-auto p-10 text-center">
-        <h2 className="font-semibold">SignUp For The Best of Experience?</h2>
+        <h2 className="font-semibold">SignUp For The Best Experience?</h2>
       </div>
       <div className="py-20 px-10 text-center  bg-zinc-800 my-10">
         {/* testing form */}
@@ -50,7 +50,7 @@ const SignupForm = (props) => {
         <form onSubmit={handleSubmit}>
           <div className="flex  text-left h-[350px] mb-10 justify-center align-middle text-xl ">
             <div className="w-[400px]">
-              <h2 className="font-thin  pb-4 text-5xl">Login</h2>
+              <h2 className="font-thin  pb-4 text-5xl">Sign up</h2>
 
               <div>
                 <label>Email Address</label>
