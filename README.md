@@ -4,43 +4,36 @@
 
 Alx Final Project. A real estate CRUD app that manages 3 user types and fake API.
 
-# Trivia_Api
+# Rapid_Api
 
-This contains my project on API and TDD. It is part of my projects at Alx-T/Udacity Full-stack Nanodegree program. It demonstrates my knowledge of RESTFUL API.
+This contains project on API and TDD. It is part of the projects at Alx Full-stack Nanodegree program. It demonstrates the knowledge of gained so far: React, node and Mongo db
 
-### Task - Full Stack Trivia
+### Task - Full Stack webstack portfolio project(Housify)
 
-Udacity is invested in creating bonding experiences for its employees and students. A bunch of team members got the idea to hold trivia on a regular basis and created a webpage to manage the trivia app and play the game, but their API experience is limited and still needs to be built out.
 
-That's where you come in! Help them finish the trivia app so they can start holding trivia and seeing who's the most knowledgeable of the bunch. The application must:
-
-1. Display questions - both all questions and by category. Questions should show the question, category and difficulty rating by default and can show/hide the answer.
-2. Delete questions.
-3. Add questions and require that they include question and answer text.
-4. Search for questions based on a text query string.
-5. Play the quiz game, randomizing either all questions or within a specific category.
-
-Completing this trivia app will give you the ability to structure plan, implement, and test an API - skills essential for enabling your future applications to communicate with others.
-
-[See more details of Task](https://github.com/emmaudeji/Trivia_Api/blob/main/Task.md)
+alx_africaalx_africa
+NanoDegree, Software EngineerNanoDegree, Software Engineer
+Aug 2021 - Aug 2022Aug 2021 - Aug 2022
+The ALX Holberton Software Engineering programme is a 12-month(70h/week) immersive programme that engages technology enthusiasts and budding software engineers in a variety of programmes across in-demand tech disciplines to prepare them for a global career as a Full-Stack Developer.
 
 ## Starting the project
 
 1. Clone the repo to your device.
 2. From the backend directory, create a virtual environment and set the required environment variables.
-3. Start the backend server using `flask run --reload`
+3. Start the backend server using by Downloading the installer from [NodeJS WebSite](https://nodejs.org/en/)
+    * Run the installer.
+    * Follow the installer steps, agree the license agreement and click the next button.
+    * Restart your system/machine.
+    * Now, test NodeJS by printing its version using the following command in Command Prompt:
+        * ``` node -v ```
 4. Run another terminal session. In the frontend directory, run `npm install` to install the required dependencies.
 5. Finally, start the frontend server using `npm start`
 6. You can view the website by visiting [http://localhost:3000](http://localhost:3000) in your browser.
 
-See more details on how to run the app.
-
-- [Backend Documentation](https://github.com/emmaudeji/Trivia_Api/blob/main/backend/README.md)
-- [Frontend Documentation](https://github.com/emmaudeji/Trivia_Api/blob/main/frontend/README.md)
-
-[See the API documentataion](https://github.com/emmaudeji/Trivia_Api/tree/main/backend#api-reference)
 
 AUTHORS
 
-- [Udacity](https://classroom.udacity.com/nanodegrees/nd0044-alg-t2/parts/cd0037)
-- [Emma Udeji](https://linkedin.com/in/emmanuel-udeji)
+ * Mildred Makori **[Github](https://github.com/kwamboka1)** , **[twitter](https://twitter.com/makori_mildred)**, **[Linkedin](https://www.linkedin.com/in/mildred-makori-892652120/)**
+  * Emma Udeji **[Github](https://github.com/emmaudeji)** , **[twitter](https://twitter.com/)**, **[Linkedin](https://linkedin.com/in/emmanuel-udeji)**
+* Zelipha Wamboi **[Github](https://github.com/Zelipha)**, **[twitter]()**, **[Linkedin](https://www.linkedin.com/in/zelipha-wambui)**
+* Robert Mudzonga **[Github](https://github.com/RobertMudzonga)**, **[twitter]()**, **[Linkedin](linkedin.com/in/robert-mudzonga-06b1ba21a)**
