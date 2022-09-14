@@ -14,7 +14,7 @@ router.post("/users/:id/property", verify, async (req, res) => {
       res.status(500).json(err);
     }
   } else {
-    res.status(403).json("You are not allowed!")
+    res.status(403).json("You are not allowed!");
   }
 });
 
@@ -28,7 +28,7 @@ router.delete("users/:id/property", verify, async (req, res) => {
       res.status(500).json(err);
     }
   } else {
-    res.status(403).json("You are not allowed!")
+    res.status(403).json("You are not allowed!");
   }
 });
 

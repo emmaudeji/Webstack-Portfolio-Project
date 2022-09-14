@@ -12,7 +12,10 @@ const Hero = () => {
           <div className="my-10 md:my-auto">
             <h1 className="pb-8 text-4xl md:text-6xl">{items.header}</h1>
             {/* <p>{items.text} </p> */}
-            <p className="text-6xl mb-10 font-bold">Let's help you find a home that is perfect for you</p>
+
+            <p className="text-6xl mb-10 font-bold">
+              Let's help you find a home that is perfect for you
+            </p>
           </div>
 
           {/* HeroImageBox component */}
