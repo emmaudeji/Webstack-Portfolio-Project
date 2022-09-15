@@ -1,8 +1,17 @@
 import { React, useState } from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+<<<<<<< HEAD
 import { useNavigate, Route, Routes } from "react-router-dom";
 import LoginForm from "../Templates/LoginForm";
+=======
+import {useNavigate, Route, Routes} from "react-router-dom";
+// import LoginForm from "/LoginForm";
+
+
+const SignupForm = (props) => {
+  // implementing state and hooks
+>>>>>>> 9a244ddd0097aacc24f6f8f1d81864d1914287a2
 
 const SignupForm = () => {
   const [inputs, setInputs] = useState({
@@ -107,7 +116,13 @@ const SignupForm = () => {
                 />
               </div>
               <div className="mx-auto text-left text-xl">
+<<<<<<< HEAD
                 <button onClick={NavigateToLoginForm}>Submit</button>
+=======
+                <button onClick={navigateToHome} cl>
+                  Submit
+                </button>
+>>>>>>> 9a244ddd0097aacc24f6f8f1d81864d1914287a2
               </div>
             </div>
           </div>

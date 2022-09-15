@@ -9,6 +9,7 @@ import Works from "../utils/Works";
 import Service from "../About/Service";
 import Partners from "../utils/Partners";
 import useFetch from "../utils/useFetch";
+import FeaturedProperty from "../Property/FeaturedProperty";
 
 function Home() {
 
@@ -42,7 +43,7 @@ function Home() {
       </section>
 
       <section className="bg-black text-white">
-        <MoreProperty header="Featured Properties" text="Check out the top rated properties around the world" />
+      <FeaturedProperty header="Featured Properties" text="Check Out The top rated Properties around the World " items={items} />
       </section>
       <section className="bg-black  text-white">
         <div className="text-center pt-20">

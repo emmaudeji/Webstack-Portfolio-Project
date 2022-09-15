@@ -13,8 +13,8 @@ const fetchData = () =>{
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '9ae960f7c4mshb32bba8ff3524f9p15f091jsn8f6aafaac8e2',
-      'X-RapidAPI-Host': 'bayut.p.rapidapi.com'
+      'X-RapidAPI-Key': 'YOUR RAPIDAPI-KEY',
+      'X-RapidAPI-Host': 'YOUR RAPIDAPI-HOST NAME'
     }
   };
   

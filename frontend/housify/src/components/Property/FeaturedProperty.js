@@ -1,14 +1,14 @@
 import PropertyCard from "../utils/PropertyCard";
 //import useFetch from "../utils/useFetch";
 
-const FeaturedProperty = ({ items }) => {
+const FeaturedProperty = ({ items, text, header }) => {
   return (
     <div className="w-full">
       <div className="container">
         {/* section label */}
         <div className="py-10">
-          <h3 className="text-purple-700"> {items.header} </h3>
-          <h5 className="pt-4"> {items.text} </h5>
+          <h3 className="text-purple-700"> {header} </h3>
+          <h5 className="pt-4"> {text} </h5>
         </div>
 
         {/* property-card-container */}
