@@ -2,7 +2,7 @@ import { React, useState } from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import {useNavigate, Route, Routes} from "react-router-dom";
-import LoginForm from "/LoginForm";
+// import LoginForm from "/LoginForm";
 
 
 const SignupForm = (props) => {
@@ -113,7 +113,7 @@ const SignupForm = (props) => {
                 />
               </div>
               <div className="mx-auto text-left text-xl">
-                <button onClick={NavigateToLoginForm} cl>
+                <button onClick={navigateToHome} cl>
                   Submit
                 </button>
               </div>

@@ -1,8 +1,9 @@
 # Housify
+![Housify]()
+`Group project` `Web Portfolio project`
+The project is a Property management web app that helps people to rent or buy property at any part of the World. We are using API to list the available houses, With Agents to facilitate the process. 
 
-`Group project` `Portfolio project`
 
-Alx Final Project. A real estate CRUD app that manages 3 user types and fake API.
 
 # Rapid_Api
 
@@ -12,8 +13,6 @@ This contains project on API and TDD. It is part of the projects at Alx Full-sta
 
 
 alx_africaalx_africa
-NanoDegree, Software EngineerNanoDegree, Software Engineer
-Aug 2021 - Aug 2022Aug 2021 - Aug 2022
 The ALX Holberton Software Engineering programme is a 12-month(70h/week) immersive programme that engages technology enthusiasts and budding software engineers in a variety of programmes across in-demand tech disciplines to prepare them for a global career as a Full-Stack Developer.
 
 ## Starting the project

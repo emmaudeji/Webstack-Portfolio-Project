@@ -21,8 +21,10 @@ function Property() {
 
       <SearchBar />
     
-      <FeaturedProperty items={items} />
-      <MoreProperty />
+      <FeaturedProperty header="Featured Properties" text="Check Out The top rated Properties around the World " items={items} />
+
+      
+      {/* <MoreProperty /> */}
       <Footer />
     </div>
   );
