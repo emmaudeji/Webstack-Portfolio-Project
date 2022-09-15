@@ -1,5 +1,6 @@
 # Housify
-![Housify]()
+![Housify](https://github.com/emmaudeji/Webstack-Portfolio-Project/blob/main/welcome.png)
+
 `Group project` `Web Portfolio project`
 The project is a Property management web app that helps people to rent or buy property at any part of the World. We are using API to list the available houses, With Agents to facilitate the process. 
 
