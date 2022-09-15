@@ -21,7 +21,7 @@ router.put("/:id", verify, async (req, res) => {
         },
         { new: true }
       );
-      res.status(200).json(updatedUser);
+      res.redirect("/frontend/housify/src/components/templates/LoginForm.js");
     } catch (err) {
       res.status(500).json(err);
     }

@@ -1,6 +1,9 @@
 import { React, useState } from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import {useNavigate, Route, Routes} from "react-router-dom";
+import LoginForm from "/LoginForm";
+
 
 const SignupForm = (props) => {
   // implementing state and hooks
@@ -33,7 +36,14 @@ const SignupForm = (props) => {
       ...prevInputs,
       [name]: value,
     }));
+
   };
+  const navigate = useNavigate();
+
+  const navigateToHome = () => {
+    navigate('LoginForm');
+  }
+
 
   return (
     <div className="Property">
@@ -46,6 +56,10 @@ const SignupForm = (props) => {
         {/* <h4>
           Hello {inputs.email} {inputs.password} {inputs.repeatPassword}
         </h4> */}
+        <Routes>
+          <Route path = "LoginForm"
+          element={<LoginForm/>}/>
+        </Routes>
 
         <form onSubmit={handleSubmit}>
           <div className="flex  text-left h-[350px] mb-10 justify-center align-middle text-xl ">
@@ -99,7 +113,7 @@ const SignupForm = (props) => {
                 />
               </div>
               <div className="mx-auto text-left text-xl">
-                <button type="submit button" className="px-10 py-4">
+                <button onClick={NavigateToLoginForm} cl>
                   Submit
                 </button>
               </div>
@@ -111,6 +125,12 @@ const SignupForm = (props) => {
       <Footer />
     </div>
   );
+};
+
+function LoginForm(){
+  return <>
+   <LoginForm/>
+  </>
 };
 
 export default SignupForm;
