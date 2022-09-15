@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Webstack-Portfolio-Project/static/css/main.9ef814cd.css",
+    "main.js": "/Webstack-Portfolio-Project/static/js/main.aaf5ef55.js",
+    "static/js/787.a3bf7b0e.chunk.js": "/Webstack-Portfolio-Project/static/js/787.a3bf7b0e.chunk.js",
+    "static/media/Emma.jpeg": "/Webstack-Portfolio-Project/static/media/Emma.9b0d45d0444f1a153ee9.jpeg",
+    "static/media/Zeliq.jpg": "/Webstack-Portfolio-Project/static/media/Zeliq.afeae4a95c11cd30f7b6.jpg",
+    "static/media/Milly.jpeg": "/Webstack-Portfolio-Project/static/media/Milly.54912ef381e456ac793e.jpeg",
+    "static/media/Robert.jpeg": "/Webstack-Portfolio-Project/static/media/Robert.d1247d9749808f033857.jpeg",
+    "index.html": "/Webstack-Portfolio-Project/index.html",
+    "main.9ef814cd.css.map": "/Webstack-Portfolio-Project/static/css/main.9ef814cd.css.map",
+    "main.aaf5ef55.js.map": "/Webstack-Portfolio-Project/static/js/main.aaf5ef55.js.map",
+    "787.a3bf7b0e.chunk.js.map": "/Webstack-Portfolio-Project/static/js/787.a3bf7b0e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ef814cd.css",
+    "static/js/main.aaf5ef55.js"
+  ]
+}
