@@ -8,7 +8,6 @@ const LoginForm = (props) => {
   const [inputs, setInputs] = useState({
     password: "",
     email: "",
-    repeatPassword: "",
   });
 
   const handleSubmit = (event) => {
@@ -21,7 +20,6 @@ const LoginForm = (props) => {
     setInputs({
       password: "",
       email: "",
-      repeatPassword: "",
     });
   };
 

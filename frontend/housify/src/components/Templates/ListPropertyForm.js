@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 
+
 function ListPropertyForm() {
   const [inputs, setInputs] = useState({
     address: "",
@@ -25,7 +26,17 @@ function ListPropertyForm() {
          
          Thank you for listing a property`);
     }
-    setInputs({});
+    setInputs({address: "",
+    city: "",
+    state: "",
+    country: "",
+    zipCode: "",
+    propertyType: "",
+    bedrooms: "",
+    imageUrl: "",
+    description: "",
+    firstPrice: "",
+    secondPrice: "",});
   };
 
   const handleInputChange = (event) => {

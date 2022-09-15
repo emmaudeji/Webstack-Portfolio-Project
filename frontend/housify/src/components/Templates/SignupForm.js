@@ -1,17 +1,17 @@
 import { React, useState } from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-<<<<<<< HEAD
-import { useNavigate, Route, Routes } from "react-router-dom";
-import LoginForm from "../Templates/LoginForm";
-=======
-import {useNavigate, Route, Routes} from "react-router-dom";
-// import LoginForm from "/LoginForm";
 
+// <<<<<<< HEAD
+// import { useNavigate, Route, Routes } from "react-router-dom";
+// import LoginForm from "../Templates/LoginForm";
+// =======
+// import {useNavigate, Route, Routes} from "react-router-dom";
+// // import LoginForm from "/LoginForm";
 
-const SignupForm = (props) => {
-  // implementing state and hooks
->>>>>>> 9a244ddd0097aacc24f6f8f1d81864d1914287a2
+// const SignupForm = (props) => {
+//   // implementing state and hooks
+// >>>>>>> 9a244ddd0097aacc24f6f8f1d81864d1914287a2
 
 const SignupForm = () => {
   const [inputs, setInputs] = useState({
@@ -43,11 +43,11 @@ const SignupForm = () => {
       [name]: value,
     }));
   };
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const navigateToHome = () => {
-    navigate("LoginForm");
-  };
+  // const navigateToHome = () => {
+  //   navigate("LoginForm");
+  // };
 
   return (
     <div className="Property">
@@ -60,9 +60,9 @@ const SignupForm = () => {
         {/* <h4>
           Hello {inputs.email} {inputs.password} {inputs.repeatPassword}
         </h4> */}
-        <Routes>
+        {/* <Routes>
           <Route path="LoginForm" element={<LoginForm />} />
-        </Routes>
+        </Routes> */}
 
         <form onSubmit={handleSubmit}>
           <div className="flex  text-left h-[350px] mb-10 justify-center align-middle text-xl ">
@@ -116,13 +116,9 @@ const SignupForm = () => {
                 />
               </div>
               <div className="mx-auto text-left text-xl">
-<<<<<<< HEAD
-                <button onClick={NavigateToLoginForm}>Submit</button>
-=======
-                <button onClick={navigateToHome} cl>
-                  Submit
-                </button>
->>>>>>> 9a244ddd0097aacc24f6f8f1d81864d1914287a2
+                {/* <button onClick={NavigateToLoginForm}>Submit</button> */}
+                {/* <button onClick={navigateToHome} cl></button> */}
+                <button>Submit</button>
               </div>
             </div>
           </div>
