@@ -5,6 +5,7 @@ import AgentHeroBanner from "./AgentHeroBanner";
 import MoreProperty from "../Property/MoreProperty";
 // import FeaturedProperty from "../Property/FeaturedProperty";
 import ExpertSection from "../utils/ExpertSection";
+import ListPropertyForm from "../Templates/ListPropertyForm";
 
 function AgentDashboard() {
   return (
@@ -20,6 +21,9 @@ function AgentDashboard() {
         header="Featured Properties"
         text="Top Rated Properties"
       /> */}
+
+      <ListPropertyForm />
+
       <ExpertSection
         header="Meet Expert Agents"
         text="We have certified experts ready to attend to you"
