@@ -3,7 +3,7 @@
 
 `Group project` `Web Portfolio project`
 
-> The project is a Property management web app that helps people to rent or buy property at any part of the World. We are using Rapid API to list the available houses, With Agents to facilitate the process. 
+> Housify is a Property management web app that helps people to rent or buy property at any part of the World. We are using Rapid API to list the available houses, With Agents to facilitate the process. 
 
 
 ### Task - Full Stack webstack portfolio project(Housify)
@@ -35,5 +35,6 @@ AUTHORS
 * Emma Udeji **[Github](https://github.com/emmaudeji)** , **[twitter](https://twitter.com/)**, **[Linkedin](https://linkedin.com/in/emmanuel-udeji)**
 * Zelipha Wambui **[Github](https://github.com/Zelipha)**, **[twitter](https://twitter.com/Miss_zeliq)**, **[Linkedin](https://www.linkedin.com/in/zelipha-wambui)**
 * Robert Mudzonga **[Github](https://github.com/RobertMudzonga)**, **[twitter]()**, **[Linkedin](linkedin.com/in/robert-mudzonga-06b1ba21a)**
+
 
 > Show love by leaving a ⭐️ if you like this project and don't forget to fork, break and modify 
