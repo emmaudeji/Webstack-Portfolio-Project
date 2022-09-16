@@ -2,7 +2,8 @@
 ![Housify](https://github.com/emmaudeji/Webstack-Portfolio-Project/blob/main/welcome.png)
 
 `Group project` `Web Portfolio project`
-The project is a Property management web app that helps people to rent or buy property at any part of the World. We are using API to list the available houses, With Agents to facilitate the process. 
+
+> The project is a Property management web app that helps people to rent or buy property at any part of the World. We are using Rapid API to list the available houses, With Agents to facilitate the process. 
 
 
 ### Task - Full Stack webstack portfolio project(Housify)
@@ -28,7 +29,7 @@ The ALX Holberton Software Engineering programme is a 12-month(70h/week) immersi
 
 AUTHORS
 
- * Mildred Makori **[Github](https://github.com/kwamboka1)** , **[twitter](https://twitter.com/makori_mildred)**, **[Linkedin](https://www.linkedin.com/in/mildred-makori-892652120/)**
-  * Emma Udeji **[Github](https://github.com/emmaudeji)** , **[twitter](https://twitter.com/)**, **[Linkedin](https://linkedin.com/in/emmanuel-udeji)**
+* Mildred Makori **[Github](https://github.com/kwamboka1)** , **[twitter](https://twitter.com/makori_mildred)**, **[Linkedin](https://www.linkedin.com/in/mildred-makori-892652120/)**
+* Emma Udeji **[Github](https://github.com/emmaudeji)** , **[twitter](https://twitter.com/)**, **[Linkedin](https://linkedin.com/in/emmanuel-udeji)**
 * Zelipha Wamboi **[Github](https://github.com/Zelipha)**, **[twitter]()**, **[Linkedin](https://www.linkedin.com/in/zelipha-wambui)**
 * Robert Mudzonga **[Github](https://github.com/RobertMudzonga)**, **[twitter]()**, **[Linkedin](linkedin.com/in/robert-mudzonga-06b1ba21a)**
