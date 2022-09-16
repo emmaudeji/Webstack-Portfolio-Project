@@ -5,15 +5,10 @@
 The project is a Property management web app that helps people to rent or buy property at any part of the World. We are using API to list the available houses, With Agents to facilitate the process. 
 
 
-
-# Rapid_Api
-
-This contains project on API and TDD. It is part of the projects at Alx Full-stack Nanodegree program. It demonstrates the knowledge of gained so far: React, node and Mongo db
-
 ### Task - Full Stack webstack portfolio project(Housify)
 
 
-alx_africaalx_africa
+### alx_africa
 The ALX Holberton Software Engineering programme is a 12-month(70h/week) immersive programme that engages technology enthusiasts and budding software engineers in a variety of programmes across in-demand tech disciplines to prepare them for a global career as a Full-Stack Developer.
 
 ## Starting the project
